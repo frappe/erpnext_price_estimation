@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2024-05-13 16:53:52.178639",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "estimation_process",
+  "estimation_document",
+  "configuration_efforts",
+  "other_efforts"
+ ],
+ "fields": [
+  {
+   "fieldname": "estimation_process",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Estimation Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "estimation_document",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Estimation Document",
+   "options": "Estimation Document"
+  },
+  {
+   "fieldname": "configuration_efforts",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Configuration Efforts (Hours)"
+  },
+  {
+   "fieldname": "other_efforts",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Other Efforts (Hours)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-13 17:03:41.125205",
+ "modified_by": "Administrator",
+ "module": "ERPNext Price Estimation",
+ "name": "Estimation Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

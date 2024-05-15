@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "creation": "2024-05-14 10:59:07.198418",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "currency",
+  "annual_pricing",
+  "quarterly_pricing",
+  "column_break_4",
+  "entry_fees",
+  "annual_commitment",
+  "quarterly_commitment"
+ ],
+ "fields": [
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "annual_pricing",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Annual Pricing",
+   "options": "currency"
+  },
+  {
+   "fieldname": "quarterly_pricing",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Quarterly Pricing",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "entry_fees",
+   "fieldtype": "Currency",
+   "label": "Entry Fees",
+   "options": "currency"
+  },
+  {
+   "fieldname": "annual_commitment",
+   "fieldtype": "Float",
+   "label": "Annual Commitment"
+  },
+  {
+   "fieldname": "quarterly_commitment",
+   "fieldtype": "Float",
+   "label": "Quarterly Commitment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-14 10:59:07.198418",
+ "modified_by": "Administrator",
+ "module": "ERPNext Price Estimation",
+ "name": "Partner Plan Amount",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,717 @@
+{
+ "actions": [],
+ "autoname": "PRM-EST-.#####",
+ "creation": "2024-05-14 12:48:08.989509",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_name",
+  "column_break_28_column",
+  "domain",
+  "status",
+  "customer_details",
+  "project_and_account_brief",
+  "qualification_details_section",
+  "current_state",
+  "pain_point",
+  "column_break_qual",
+  "impact",
+  "discovery_details_section",
+  "discovery_call_notes",
+  "pick_modules_section",
+  "accounts",
+  "payroll",
+  "manufacturing",
+  "column_break_8",
+  "buying",
+  "selling",
+  "setup",
+  "column_break_10",
+  "stock",
+  "hrms",
+  "customization",
+  "column_break_12",
+  "crm",
+  "projects",
+  "accounts_module_section",
+  "select_process_1",
+  "add_efforts_1",
+  "estimation_details_1",
+  "buying_section",
+  "select_process_2",
+  "add_efforts_2",
+  "estimation_details_2",
+  "stock_section",
+  "select_process_3",
+  "add_efforts_3",
+  "estimation_details_3",
+  "crm_section",
+  "select_process_4",
+  "add_efforts_4",
+  "estimation_details_4",
+  "payroll_section",
+  "select_process_5",
+  "add_efforts_5",
+  "estimation_details_5",
+  "selling_section",
+  "select_process_6",
+  "add_efforts_6",
+  "estimation_details_6",
+  "hrms_section",
+  "select_process_7",
+  "add_efforts_7",
+  "estimation_details_7",
+  "projects_section",
+  "select_process_8",
+  "add_efforts_8",
+  "estimation_details_8",
+  "manufacturing_section_section",
+  "select_process_9",
+  "add_efforts_9",
+  "estimation_details_9",
+  "setup_section_section",
+  "select_process_10",
+  "add_efforts_10",
+  "estimation_details_10",
+  "customizations_section",
+  "customization_status",
+  "customization_request_details",
+  "customization_estimations",
+  "total_customization_effort",
+  "total_hours_section",
+  "total_config_effort",
+  "column_break_25",
+  "total_other_effort",
+  "column_break_27",
+  "total_efforts",
+  "handover_checklist_section",
+  "handover_date",
+  "opportunity_updated",
+  "agreement_signed",
+  "payment_received",
+  "column_break_86",
+  "sales_order",
+  "sales_invoice",
+  "project",
+  "payment_received_date",
+  "handover_feedback_section",
+  "clarity",
+  "column_break_93",
+  "completeness",
+  "section_break_95",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_28_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "domain",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Domain",
+   "options": "Manufacturing\nServices\nDistribution\nHealthcare\nEducation\nRetail"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nEstimated\nConverted\nHanded Over\nLost\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_details",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "project_and_account_brief",
+   "fieldtype": "Text Editor",
+   "label": "Project and Account Brief",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.lead_qualification",
+   "fieldname": "qualification_details_section",
+   "fieldtype": "Section Break",
+   "label": "Qualification Details"
+  },
+  {
+   "fetch_from": "lead_qualification.current_state",
+   "fieldname": "current_state",
+   "fieldtype": "Text",
+   "label": "Current State",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "lead_qualification.pain_point",
+   "fieldname": "pain_point",
+   "fieldtype": "Text",
+   "label": "Pain Point",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qual",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "lead_qualification.impact",
+   "fetch_if_empty": 1,
+   "fieldname": "impact",
+   "fieldtype": "Text",
+   "label": "Impact",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.lead_qualification",
+   "fieldname": "discovery_details_section",
+   "fieldtype": "Section Break",
+   "label": "Discovery Details"
+  },
+  {
+   "fetch_from": "lead_qualification.discovery_call_notes",
+   "fieldname": "discovery_call_notes",
+   "fieldtype": "Text Editor",
+   "label": "Discovery Call Notes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pick_modules_section",
+   "fieldtype": "Section Break",
+   "label": "Pick Modules"
+  },
+  {
+   "default": "0",
+   "fieldname": "accounts",
+   "fieldtype": "Check",
+   "label": "Accounts"
+  },
+  {
+   "default": "0",
+   "fieldname": "payroll",
+   "fieldtype": "Check",
+   "label": "Payroll"
+  },
+  {
+   "default": "0",
+   "fieldname": "manufacturing",
+   "fieldtype": "Check",
+   "label": "Manufacturing"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "buying",
+   "fieldtype": "Check",
+   "label": "Buying"
+  },
+  {
+   "default": "0",
+   "fieldname": "selling",
+   "fieldtype": "Check",
+   "label": "Selling"
+  },
+  {
+   "default": "0",
+   "fieldname": "setup",
+   "fieldtype": "Check",
+   "label": "Setup"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "stock",
+   "fieldtype": "Check",
+   "label": "Stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "hrms",
+   "fieldtype": "Check",
+   "label": "HRMS"
+  },
+  {
+   "default": "0",
+   "fieldname": "customization",
+   "fieldtype": "Check",
+   "label": "Customization"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break",
+   "hide_border": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "crm",
+   "fieldtype": "Check",
+   "label": "CRM"
+  },
+  {
+   "default": "0",
+   "fieldname": "projects",
+   "fieldtype": "Check",
+   "label": "Projects"
+  },
+  {
+   "depends_on": "eval:doc.accounts",
+   "fieldname": "accounts_module_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "fieldname": "select_process_1",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_1",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_1",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.buying",
+   "fieldname": "buying_section",
+   "fieldtype": "Section Break",
+   "label": "Buying"
+  },
+  {
+   "fieldname": "select_process_2",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_2",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_2",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.stock",
+   "fieldname": "stock_section",
+   "fieldtype": "Section Break",
+   "label": "Stock"
+  },
+  {
+   "fieldname": "select_process_3",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_3",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_3",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.crm",
+   "fieldname": "crm_section",
+   "fieldtype": "Section Break",
+   "label": "CRM"
+  },
+  {
+   "fieldname": "select_process_4",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_4",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_4",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.payroll",
+   "fieldname": "payroll_section",
+   "fieldtype": "Section Break",
+   "label": "Payroll"
+  },
+  {
+   "fieldname": "select_process_5",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_5",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_5",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.selling",
+   "fieldname": "selling_section",
+   "fieldtype": "Section Break",
+   "label": "Selling"
+  },
+  {
+   "fieldname": "select_process_6",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_6",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_6",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.hrms",
+   "fieldname": "hrms_section",
+   "fieldtype": "Section Break",
+   "label": "HRMS"
+  },
+  {
+   "fieldname": "select_process_7",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_7",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_7",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.projects",
+   "fieldname": "projects_section",
+   "fieldtype": "Section Break",
+   "label": "Projects"
+  },
+  {
+   "fieldname": "select_process_8",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_8",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_8",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.manufacturing",
+   "fieldname": "manufacturing_section_section",
+   "fieldtype": "Section Break",
+   "label": "Manufacturing Section"
+  },
+  {
+   "fieldname": "select_process_9",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_9",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_9",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.setup",
+   "fieldname": "setup_section_section",
+   "fieldtype": "Section Break",
+   "label": "Setup Section"
+  },
+  {
+   "fieldname": "select_process_10",
+   "fieldtype": "Link",
+   "label": "Select Process",
+   "options": "Estimation Process"
+  },
+  {
+   "fieldname": "add_efforts_10",
+   "fieldtype": "Button",
+   "label": "Add Efforts"
+  },
+  {
+   "fieldname": "estimation_details_10",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.customization",
+   "fieldname": "customizations_section",
+   "fieldtype": "Section Break",
+   "label": "Customizations"
+  },
+  {
+   "default": "Open",
+   "fieldname": "customization_status",
+   "fieldtype": "Select",
+   "label": "Customization Status",
+   "options": "\nOpen\nWIP\nCompleted"
+  },
+  {
+   "fieldname": "customization_request_details",
+   "fieldtype": "Text Editor",
+   "label": "Customization Request Details"
+  },
+  {
+   "fieldname": "customization_estimations",
+   "fieldtype": "Table",
+   "label": "Customization Estimations",
+   "options": "Delivery Request Estimation"
+  },
+  {
+   "fieldname": "total_customization_effort",
+   "fieldtype": "Float",
+   "label": "Total Customization Effort"
+  },
+  {
+   "fieldname": "total_hours_section",
+   "fieldtype": "Section Break",
+   "label": "Total Hours"
+  },
+  {
+   "fieldname": "total_config_effort",
+   "fieldtype": "Float",
+   "label": "Total Configuration Efforts"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_other_effort",
+   "fieldtype": "Float",
+   "label": "Total Other Efforts"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_efforts",
+   "fieldtype": "Float",
+   "label": "Total Efforts"
+  },
+  {
+   "depends_on": "eval:in_list(['Converted','Handed Over','Cancelled'], doc.status)",
+   "fieldname": "handover_checklist_section",
+   "fieldtype": "Section Break",
+   "label": "Handover Checklist"
+  },
+  {
+   "fieldname": "handover_date",
+   "fieldtype": "Date",
+   "label": "Handover Date",
+   "mandatory_depends_on": "eval:in_list(['Handed Over'], doc.status)"
+  },
+  {
+   "fieldname": "opportunity_updated",
+   "fieldtype": "Select",
+   "label": "Opportunity Updated ",
+   "mandatory_depends_on": "eval:in_list(['Handed Over'], doc.status)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "agreement_signed",
+   "fieldtype": "Select",
+   "label": "Agreement Signed",
+   "mandatory_depends_on": "eval:in_list(['Handed Over'], doc.status)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "payment_received",
+   "fieldtype": "Select",
+   "label": "Payment Received",
+   "mandatory_depends_on": "eval:in_list(['Handed Over'], doc.status)",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_86",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Order Created",
+   "mandatory_depends_on": "eval:in_list(['Handed Over'], doc.status)",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice Created",
+   "mandatory_depends_on": "eval:doc.payment_received=='Yes'",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "depends_on": "eval:doc.payment_received=='Yes'",
+   "fetch_from": "sales_invoice.posting_date",
+   "fieldname": "payment_received_date",
+   "fieldtype": "Date",
+   "label": "Payment Received Date",
+   "mandatory_depends_on": "eval:doc.payment_received=='Yes'"
+  },
+  {
+   "depends_on": "eval:in_list(['Converted','Handed Over','Cancelled'], doc.status)",
+   "fieldname": "handover_feedback_section",
+   "fieldtype": "Section Break",
+   "label": "Handover Feedback"
+  },
+  {
+   "fieldname": "clarity",
+   "fieldtype": "Rating",
+   "label": "Clarity"
+  },
+  {
+   "fieldname": "column_break_93",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completeness",
+   "fieldtype": "Rating",
+   "label": "Completeness"
+  },
+  {
+   "depends_on": "eval:in_list(['Converted','Handed Over','Cancelled'], doc.status)",
+   "fieldname": "section_break_95",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Feedback Remark"
+  },
+  {
+   "fetch_from": "partner_lead.lead_name",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  }
+ ],
+ "links": [],
+ "modified": "2024-05-14 14:30:18.609444",
+ "modified_by": "Administrator",
+ "module": "ERPNext Price Estimation",
+ "name": "ERPNext Price Estimation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Orange",
+   "title": "Open"
+  },
+  {
+   "color": "Cyan",
+   "title": "Estimated"
+  },
+  {
+   "color": "Green",
+   "title": "Converted"
+  },
+  {
+   "color": "Blue",
+   "title": "Handed Over"
+  },
+  {
+   "color": "Gray",
+   "title": "Lost"
+  },
+  {
+   "color": "Gray",
+   "title": "Cancelled"
+  }
+ ],
+ "track_changes": 1
+}

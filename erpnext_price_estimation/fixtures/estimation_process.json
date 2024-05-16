@@ -2,15 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.036798",
-  "module": "Utilities",
-  "name": "Healthcare",
-  "process_name": "Healthcare",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
   "modified": "2024-05-15 14:45:38.051601",
   "module": "Setup",
   "name": "Workflow Setup",
@@ -146,51 +137,6 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.137700",
-  "module": "Selling",
-  "name": "Selling Settings",
-  "process_name": "Selling Settings",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.143617",
-  "module": "Selling",
-  "name": "Selling Cycle Mapping",
-  "process_name": "Selling Cycle Mapping",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.147744",
-  "module": "Selling",
-  "name": "Sales Person Setup",
-  "process_name": "Sales Person Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.152790",
-  "module": "Selling",
-  "name": "Sales Partner Setup",
-  "process_name": "Sales Partner Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.157175",
-  "module": "Selling",
-  "name": "Customer Setup",
-  "process_name": "Customer Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
   "modified": "2024-05-15 14:45:38.160786",
   "module": "Stock",
   "name": "Stock Settings",
@@ -281,33 +227,6 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.210551",
-  "module": "Buying",
-  "name": "Buying Settings",
-  "process_name": "Buying Settings",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.214808",
-  "module": "Buying",
-  "name": "Buying Cycle Mapping",
-  "process_name": "Buying Cycle Mapping",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.218951",
-  "module": "Buying",
-  "name": "Supplier Setup",
-  "process_name": "Supplier Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
   "modified": "2024-05-15 14:45:38.223235",
   "module": "Projects",
   "name": "Timesheet Setup",
@@ -344,24 +263,6 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.241103",
-  "module": "Payroll",
-  "name": "Payroll Settings",
-  "process_name": "Payroll Settings",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.246070",
-  "module": "Payroll",
-  "name": "Tax Declarations",
-  "process_name": "Tax Declarations",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
   "modified": "2024-05-15 14:45:38.251431",
   "module": "CRM",
   "name": "Opportunity Setup",
@@ -380,10 +281,181 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.260263",
-  "module": "HR",
-  "name": "Payroll",
-  "process_name": "Payroll",
+  "modified": "2024-05-16 14:37:26.259421",
+  "module": "Healthcare",
+  "name": "Configuration",
+  "process_name": "Configuration",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:37:36.228441",
+  "module": "Healthcare",
+  "name": "Consultation",
+  "process_name": "Consultation",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:38:20.715285",
+  "module": "Healthcare",
+  "name": "Inpatient",
+  "process_name": "Inpatient",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:38:52.406893",
+  "module": "Healthcare",
+  "name": "Laboratory",
+  "process_name": "Laboratory",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:39:31.572773",
+  "module": "Healthcare",
+  "name": "Rehabilitation",
+  "process_name": "Rehabilitation",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:40:32.034901",
+  "module": "Healthcare",
+  "name": "Data Migration",
+  "process_name": "Data Migration",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:47:34.060248",
+  "module": "Education",
+  "name": "Programs and Courses",
+  "process_name": "Programs and Courses",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:48:56.426203",
+  "module": "Education",
+  "name": "Topics and Instructors",
+  "process_name": "Topics and Instructors",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:49:56.896775",
+  "module": "Education",
+  "name": "Rooms and Academic Year",
+  "process_name": "Rooms and Academic Year",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:50:31.449286",
+  "module": "Education",
+  "name": "Students Migrartion",
+  "process_name": "Students Migrartion",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:50:57.160120",
+  "module": "Education",
+  "name": "Fees Management",
+  "process_name": "Fees Management",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:51:35.548924",
+  "module": "Education",
+  "name": "Course Schedule",
+  "process_name": "Course Schedule",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-16 14:51:52.753424",
+  "module": "Education",
+  "name": "Assessment",
+  "process_name": "Assessment",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.036798",
+  "module": "Utilities",
+  "name": "Healthcare",
+  "process_name": "Healthcare",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.210551",
+  "module": "Buying",
+  "name": "Buying Settings",
+  "process_name": "Buying Settings",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.214808",
+  "module": "Buying",
+  "name": "Buying Cycle Mapping",
+  "process_name": "Buying Cycle Mapping",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.137700",
+  "module": "Selling",
+  "name": "Selling Settings",
+  "process_name": "Selling Settings",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.143617",
+  "module": "Selling",
+  "name": "Selling Cycle Mapping",
+  "process_name": "Selling Cycle Mapping",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.147744",
+  "module": "Selling",
+  "name": "Sales Person Setup",
+  "process_name": "Sales Person Setup",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.152790",
+  "module": "Selling",
+  "name": "Sales Partner Setup",
+  "process_name": "Sales Partner Setup",
   "table_fssue": []
  },
  {
@@ -393,6 +465,69 @@
   "module": "HR",
   "name": "HR Settings",
   "process_name": "HR Settings",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.218951",
+  "module": "Buying",
+  "name": "Supplier Setup",
+  "process_name": "Supplier Setup",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 20:02:52.543622",
+  "module": "Payroll",
+  "name": "Payroll Settings",
+  "process_name": "Payroll Settings",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.295900",
+  "module": "Accounts",
+  "name": "Accounts Settings",
+  "process_name": "Accounts Settings",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.300073",
+  "module": "Accounts",
+  "name": "Opening Balance of Accounts",
+  "process_name": "Opening Balance of Accounts",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.310924",
+  "module": "Accounts",
+  "name": "Budgeting",
+  "process_name": "Budgeting",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.319399",
+  "module": "Accounts",
+  "name": "Chart Of Accounts",
+  "process_name": "Chart Of Accounts",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.323927",
+  "module": "Accounts",
+  "name": "Company Setup",
+  "process_name": "Company Setup",
   "table_fssue": []
  },
  {
@@ -434,55 +569,10 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.288520",
-  "module": "HR",
-  "name": "Leave Setup",
-  "process_name": "Leave Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
   "modified": "2024-05-15 14:45:38.292307",
   "module": "HR",
   "name": "Employee Setup",
   "process_name": "Employee Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.295900",
-  "module": "Accounts",
-  "name": "Accounts Settings",
-  "process_name": "Accounts Settings",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.300073",
-  "module": "Accounts",
-  "name": "Opening Balance of Accounts",
-  "process_name": "Opening Balance of Accounts",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.306727",
-  "module": "Accounts",
-  "name": "Taxes Setup",
-  "process_name": "Taxes Setup",
-  "table_fssue": []
- },
- {
-  "docstatus": 0,
-  "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.310924",
-  "module": "Accounts",
-  "name": "Budgeting",
-  "process_name": "Budgeting",
   "table_fssue": []
  },
  {
@@ -497,19 +587,46 @@
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.319399",
-  "module": "Accounts",
-  "name": "Chart Of Accounts",
-  "process_name": "Chart Of Accounts",
+  "modified": "2024-05-15 14:45:38.157175",
+  "module": "Selling",
+  "name": "Customer Setup",
+  "process_name": "Customer Setup",
   "table_fssue": []
  },
  {
   "docstatus": 0,
   "doctype": "Estimation Process",
-  "modified": "2024-05-15 14:45:38.323927",
+  "modified": "2024-05-15 14:45:38.260263",
+  "module": "HR",
+  "name": "Payroll",
+  "process_name": "Payroll",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.288520",
+  "module": "HR",
+  "name": "Leave Setup",
+  "process_name": "Leave Setup",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.306727",
   "module": "Accounts",
-  "name": "Company Setup",
-  "process_name": "Company Setup",
+  "name": "Taxes Setup",
+  "process_name": "Taxes Setup",
+  "table_fssue": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Estimation Process",
+  "modified": "2024-05-15 14:45:38.246070",
+  "module": "Payroll",
+  "name": "Tax Declarations",
+  "process_name": "Tax Declarations",
   "table_fssue": []
  }
 ]

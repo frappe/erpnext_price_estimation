@@ -88,17 +88,6 @@
   "process_name": "Healthcare"
  },
  {
-  "configuration_effort": 0.5,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Healthcare Settings",
-  "modified": "2024-05-15 14:47:27.795949",
-  "module": "Utilities",
-  "name": "Healthcare Settings",
-  "other_effort": 0.0,
-  "process_name": "Healthcare"
- },
- {
   "configuration_effort": 3.0,
   "docstatus": 0,
   "doctype": "Estimation Document",
@@ -339,94 +328,6 @@
   "name": "Lead Source",
   "other_effort": 1.0,
   "process_name": "Lead Setup"
- },
- {
-  "configuration_effort": 1.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Selling Settings",
-  "modified": "2024-05-15 14:47:27.914585",
-  "module": "Selling",
-  "name": "Selling Settings",
-  "other_effort": 1.0,
-  "process_name": "Selling Settings"
- },
- {
-  "configuration_effort": 3.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Selling Cycle Mapping",
-  "modified": "2024-05-15 14:47:27.919195",
-  "module": "Selling",
-  "name": "Selling Cycle Mapping",
-  "other_effort": 2.0,
-  "process_name": "Selling Cycle Mapping"
- },
- {
-  "configuration_effort": 2.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Sales Person",
-  "modified": "2024-05-15 14:47:27.923595",
-  "module": "Selling",
-  "name": "Sales Person",
-  "other_effort": 0.0,
-  "process_name": "Sales Person Setup"
- },
- {
-  "configuration_effort": 2.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Sales Partner",
-  "modified": "2024-05-15 14:47:27.927985",
-  "module": "Selling",
-  "name": "Sales Partner",
-  "other_effort": 1.0,
-  "process_name": "Sales Partner Setup"
- },
- {
-  "configuration_effort": 2.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Customer Contact",
-  "modified": "2024-05-15 14:47:27.932881",
-  "module": "Selling",
-  "name": "Customer Contact",
-  "other_effort": 0.0,
-  "process_name": "Customer Setup"
- },
- {
-  "configuration_effort": 2.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Customer Address",
-  "modified": "2024-05-15 14:47:27.937166",
-  "module": "Selling",
-  "name": "Customer Address",
-  "other_effort": 0.0,
-  "process_name": "Customer Setup"
- },
- {
-  "configuration_effort": 2.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Customer",
-  "modified": "2024-05-15 14:47:27.941628",
-  "module": "Selling",
-  "name": "Customer",
-  "other_effort": 0.0,
-  "process_name": "Customer Setup"
- },
- {
-  "configuration_effort": 1.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Customer Group",
-  "modified": "2024-05-15 14:47:27.945961",
-  "module": "Selling",
-  "name": "Customer Group",
-  "other_effort": 1.0,
-  "process_name": "Customer Setup"
  },
  {
   "configuration_effort": 1.0,
@@ -748,59 +649,103 @@
   "process_name": "Supplier Setup"
  },
  {
-  "configuration_effort": 1.5,
+  "configuration_effort": 0.5,
   "docstatus": 0,
   "doctype": "Estimation Document",
-  "document_name": "Employee Tax Exemption Proof Submission",
-  "modified": "2024-05-15 14:47:28.089451",
-  "module": "Payroll",
-  "name": "Employee Tax Exemption Proof Submission",
-  "other_effort": 0.5,
-  "process_name": "Tax Declarations"
+  "document_name": "Healthcare Settings",
+  "modified": "2024-05-16 11:42:04.351845",
+  "module": "Utilities",
+  "name": "Healthcare Settings",
+  "other_effort": 0.0,
+  "process_name": "Healthcare"
+ },
+ {
+  "configuration_effort": 1.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Selling Settings",
+  "modified": "2024-05-15 14:47:27.914585",
+  "module": "Selling",
+  "name": "Selling Settings",
+  "other_effort": 1.0,
+  "process_name": "Selling Settings"
  },
  {
   "configuration_effort": 3.0,
   "docstatus": 0,
   "doctype": "Estimation Document",
-  "document_name": "Employee Tax Exemption Declaration",
-  "modified": "2024-05-15 14:47:28.093354",
-  "module": "Payroll",
-  "name": "Employee Tax Exemption Declaration",
-  "other_effort": 0.5,
-  "process_name": "Tax Declarations"
+  "document_name": "Selling Cycle Mapping",
+  "modified": "2024-05-15 14:47:27.919195",
+  "module": "Selling",
+  "name": "Selling Cycle Mapping",
+  "other_effort": 2.0,
+  "process_name": "Selling Cycle Mapping"
  },
  {
-  "configuration_effort": 1.0,
+  "configuration_effort": 2.0,
   "docstatus": 0,
   "doctype": "Estimation Document",
-  "document_name": "Employee Tax Exemption Sub Category",
-  "modified": "2024-05-15 14:47:28.098239",
-  "module": "Payroll",
-  "name": "Employee Tax Exemption Sub Category",
-  "other_effort": 0.5,
-  "process_name": "Tax Declarations"
- },
- {
-  "configuration_effort": 1.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Employee Tax Exemption Category",
-  "modified": "2024-05-15 14:47:28.102957",
-  "module": "Payroll",
-  "name": "Employee Tax Exemption Category",
-  "other_effort": 0.5,
-  "process_name": "Tax Declarations"
- },
- {
-  "configuration_effort": 1.0,
-  "docstatus": 0,
-  "doctype": "Estimation Document",
-  "document_name": "Payroll Settings",
-  "modified": "2024-05-15 14:47:28.108408",
-  "module": "Payroll",
-  "name": "Payroll Settings",
+  "document_name": "Sales Person",
+  "modified": "2024-05-15 14:47:27.923595",
+  "module": "Selling",
+  "name": "Sales Person",
   "other_effort": 0.0,
-  "process_name": "Payroll Settings"
+  "process_name": "Sales Person Setup"
+ },
+ {
+  "configuration_effort": 2.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Sales Partner",
+  "modified": "2024-05-15 14:47:27.927985",
+  "module": "Selling",
+  "name": "Sales Partner",
+  "other_effort": 1.0,
+  "process_name": "Sales Partner Setup"
+ },
+ {
+  "configuration_effort": 2.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Customer Contact",
+  "modified": "2024-05-15 14:47:27.932881",
+  "module": "Selling",
+  "name": "Customer Contact",
+  "other_effort": 0.0,
+  "process_name": "Customer Setup"
+ },
+ {
+  "configuration_effort": 2.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Customer Address",
+  "modified": "2024-05-15 14:47:27.937166",
+  "module": "Selling",
+  "name": "Customer Address",
+  "other_effort": 0.0,
+  "process_name": "Customer Setup"
+ },
+ {
+  "configuration_effort": 2.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Customer",
+  "modified": "2024-05-15 14:47:27.941628",
+  "module": "Selling",
+  "name": "Customer",
+  "other_effort": 0.0,
+  "process_name": "Customer Setup"
+ },
+ {
+  "configuration_effort": 1.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Customer Group",
+  "modified": "2024-05-15 14:47:27.945961",
+  "module": "Selling",
+  "name": "Customer Group",
+  "other_effort": 1.0,
+  "process_name": "Customer Setup"
  },
  {
   "configuration_effort": 2.0,
@@ -1054,6 +999,61 @@
   "name": "Department",
   "other_effort": 1.0,
   "process_name": "Employee Setup"
+ },
+ {
+  "configuration_effort": 1.5,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Employee Tax Exemption Proof Submission",
+  "modified": "2024-05-15 14:47:28.089451",
+  "module": "Payroll",
+  "name": "Employee Tax Exemption Proof Submission",
+  "other_effort": 0.5,
+  "process_name": "Tax Declarations"
+ },
+ {
+  "configuration_effort": 3.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Employee Tax Exemption Declaration",
+  "modified": "2024-05-15 14:47:28.093354",
+  "module": "Payroll",
+  "name": "Employee Tax Exemption Declaration",
+  "other_effort": 0.5,
+  "process_name": "Tax Declarations"
+ },
+ {
+  "configuration_effort": 1.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Employee Tax Exemption Sub Category",
+  "modified": "2024-05-15 14:47:28.098239",
+  "module": "Payroll",
+  "name": "Employee Tax Exemption Sub Category",
+  "other_effort": 0.5,
+  "process_name": "Tax Declarations"
+ },
+ {
+  "configuration_effort": 1.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Employee Tax Exemption Category",
+  "modified": "2024-05-15 14:47:28.102957",
+  "module": "Payroll",
+  "name": "Employee Tax Exemption Category",
+  "other_effort": 0.5,
+  "process_name": "Tax Declarations"
+ },
+ {
+  "configuration_effort": 1.0,
+  "docstatus": 0,
+  "doctype": "Estimation Document",
+  "document_name": "Payroll Settings",
+  "modified": "2024-05-15 20:02:36.810446",
+  "module": "Payroll",
+  "name": "Payroll Settings",
+  "other_effort": 0.0,
+  "process_name": "Payroll Settings"
  },
  {
   "configuration_effort": 1.0,

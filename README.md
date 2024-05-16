@@ -4,7 +4,9 @@
 ERPNext, an open-source ERP system, offers a wide range of modules and functionalities to businesses of all sizes. However, implementing ERPNext require meticulous planning and configuration to meet the unique requirements of each organization. ERPNext Price Estimation simplifies this process by providing partners and consultants with a centralized platform to manage all aspects of ERPNext implementation projects. Also helps the Partners to estimate the configuration efforts. 
 ### Key Features
 Comprehensive Module Details: ERPNext modules, including configurations, features, and customization options.
+
 Effort Estimations: Plan implementation projects effectively with built-in tools for estimating configuration efforts, development tasks, and other project activities.
+
 Print Formats: Generate professional print format.
 
 

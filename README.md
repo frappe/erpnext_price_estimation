@@ -1,9 +1,12 @@
 ## ERPNext Price Estimation
 
 ### Introduction
-
-ERPNext Price Estimation is a new custom app which helps the Partners to estimate the total configuration efforts. 
+ERPNext, an open-source ERP system, offers a wide range of modules and functionalities to businesses of all sizes. However, implementing ERPNext require meticulous planning and configuration to meet the unique requirements of each organization. ERPNext Price Estimation simplifies this process by providing partners and consultants with a centralized platform to manage all aspects of ERPNext implementation projects. Also helps the Partners to estimate the configuration efforts. 
 ### Key Features
+Comprehensive Module Details: ERPNext modules, including configurations, features, and customization options.
+Effort Estimations: Plan implementation projects effectively with built-in tools for estimating configuration efforts, development tasks, and other project activities.
+Print Formats: Generate professional print format.
+
 
 
 By integrating with [ERPNext](https://github.com/frappe/erpnext), feature extensibility for estimating the configuration efforts. Meanwhile the [Frappe Framework](https://github.com/frappe/frappe) powers extensibility in terms of authentication and role based access permissions, notifications, workflows, emails and a lot more.
@@ -23,10 +26,6 @@ After that, you can install PRM app on the required site by running
 ```sh
 $ bench --site demo.com install-app partner_relationship_management
 ```
-
-### Documentation
-
-who would be accessing this app: Partners for managing the partners. Separate manuals for these 2 user journies are available here:
 
 #### License
 

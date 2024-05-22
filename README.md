@@ -23,12 +23,6 @@ Once ERPNext is installed, add PRM app to your bench by running
 $ bench get-app erpnext_price_estimation https://github.com/frappe/erpnext_price_estimation.git
 ```
 
-After that, you can install PRM app on the required site by running
-
-```sh
-$ bench --site demo.com install-app partner_relationship_management
-```
-
 #### License
 
 MIT See [license.txt](https://github.com/frappe/partner_relationship_management/blob/main/license.txt) for more information.

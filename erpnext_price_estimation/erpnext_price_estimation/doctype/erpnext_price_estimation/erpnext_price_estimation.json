@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "posting_date",
   "customer",
   "customer_name",
   "column_break_28_column",
@@ -68,10 +69,27 @@
   "select_process12",
   "total_hours_section",
   "total_config_effort",
+  "total_hourly_rate",
   "column_break_25",
   "total_other_effort",
+  "total_efforts",
+  "total_amount",
+  "frappe_cloud_details",
+  "frappe_cloud_plan",
+  "column_break_26",
+  "validity",
+  "rate",
   "column_break_27",
-  "total_efforts"
+  "uom",
+  "amount",
+  "amc_details",
+  "amc",
+  "column_break_28",
+  "amc_validity",
+  "amc_rate",
+  "column_break_29",
+  "amc_uom",
+  "amc_amount"
  ],
  "fields": [
   {
@@ -388,7 +406,7 @@
   {
    "fieldname": "total_hours_section",
    "fieldtype": "Section Break",
-   "label": "Total Hours"
+   "label": "Total Implementation Hours"
   },
   {
    "fieldname": "total_config_effort",
@@ -403,10 +421,6 @@
    "fieldname": "total_other_effort",
    "fieldtype": "Float",
    "label": "Total Other Efforts"
-  },
-  {
-   "fieldname": "column_break_27",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "total_efforts",
@@ -461,10 +475,105 @@
    "fieldtype": "Table",
    "label": "Estimation Details",
    "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "total_hourly_rate",
+   "fieldtype": "Float",
+   "label": "Total Hourly Rate"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "frappe_cloud_details",
+   "fieldtype": "Section Break",
+   "label": "Frappe Cloud Details"
+  },
+  {
+   "fieldname": "amc_details",
+   "fieldtype": "Section Break",
+   "label": "AMC Details"
+  },
+  {
+   "fieldname": "frappe_cloud_plan",
+   "fieldtype": "Small Text",
+   "label": "Frappe Cloud Plan"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "validity",
+   "fieldtype": "Float",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Month\nYear"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "AMC",
+   "fieldname": "amc",
+   "fieldtype": "Small Text",
+   "label": "AMC"
+  },
+  {
+   "fieldname": "amc_validity",
+   "fieldtype": "Float",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "amc_rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "amc_uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "Month\nYear"
+  },
+  {
+   "fieldname": "amc_amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
   }
  ],
  "links": [],
- "modified": "2024-05-16 07:03:08.351033",
+ "modified": "2024-05-22 07:54:30.551936",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

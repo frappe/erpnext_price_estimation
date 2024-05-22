@@ -277,3 +277,48 @@ frappe.ui.form.on('Estimation Detail', {
         frm.events.calculate_totals(frm);
     },
 });
+
+frappe.ui.form.on('ERPNext Price Estimation', {
+    total_hourly_rate: function(frm) {
+        update_total_amount(frm);
+    },
+    total_efforts: function(frm) {
+        update_total_amount(frm);
+    }
+});
+
+function update_total_amount(frm) {
+    var total = frm.doc.total_hourly_rate * frm.doc.total_efforts;
+    frm.set_value('total_amount', total);
+    frm.refresh_field('total_amount');
+}
+
+frappe.ui.form.on('ERPNext Price Estimation', {
+    validity: function(frm) {
+        update_amount(frm);
+    },
+    rate: function(frm) {
+        update_amount(frm);
+    }
+});
+
+function update_amount(frm) {
+    var total = frm.doc.validity * frm.doc.rate;
+    frm.set_value('amount', total);
+    frm.refresh_field('amount');
+}
+
+frappe.ui.form.on('ERPNext Price Estimation', {
+    amc_validity: function(frm) {
+        update_amc_amount(frm);
+    },
+    amc_rate: function(frm) {
+        update_amc_amount(frm);
+    }
+});
+
+function update_amc_amount(frm) {
+    var total = frm.doc.amc_validity * frm.doc.amc_rate;
+    frm.set_value('amc_amount', total);
+    frm.refresh_field('amc_amount');
+}

@@ -27,8 +27,8 @@ $ bench get-app erpnext_price_estimation https://github.com/frappe/erpnext_price
 Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
 #### 1. Start a new estimate
+![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/3e5b6b1a-61cc-4d22-a59b-f443c84ab5a3)
 
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/51f164b3-7c6f-4eea-8969-362c4647a6bc)
 
 #### 2. Select the modules
 

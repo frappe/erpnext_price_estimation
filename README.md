@@ -63,10 +63,6 @@ Select "ERPNext Price Estimation - Compact."
 ![Compact](https://github.com/frappe/erpnext_price_estimation/assets/27720465/bc075c61-d36a-4ca6-ac05-4cb27504c73b)
 
 
-Generating Detailed Print Format
-In the "Print Formats" section, choose "ERPNext Price Estimation (Detailed)."
-![Detailed](https://github.com/frappe/erpnext_price_estimation/assets/27720465/815cbc42-4600-4e54-bd1b-59cd0038ac81)
-
 
 Customize the print format if needed and generate the document.
 

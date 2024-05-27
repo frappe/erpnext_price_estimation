@@ -41,9 +41,7 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 ![2](https://github.com/frappe/erpnext_price_estimation/assets/27720465/7e9d11c3-1cd2-4951-ade3-32d5dbbe7286)
 
 #### 3. Set your hourly rate
-
-
-![3](https://github.com/frappe/erpnext_price_estimation/assets/27720465/e32b5ad3-8672-4ba6-83d0-bd3650adf2a0)
+![3](https://github.com/frappe/erpnext_price_estimation/assets/27720465/cf664612-e3ce-4951-8e01-92966ad7cbe2)
 
 
 
@@ -53,7 +51,12 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 #### 5. Add the AMC details
 
-![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/9f49a208-961d-4d71-a431-2a8cc23770ae)
+
+
+![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/04a53644-8c77-4556-9823-fe68b4db72d0)
+
+![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/6b5373c5-cfdb-4228-b403-f0ecfa5f4969)
+
 
 
 #### 6. Review and Save

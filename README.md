@@ -59,6 +59,20 @@ In the "Print Formats" section, choose "ERPNext Price Estimation (Detailed)."
 Customize the print format if needed and generate the document.
 
 ### 3. Changing the masters
+New modules,Estimation Process, Estimation Document  can be added as required.
+Modules:
+![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/40b75d42-cfb0-4b62-8ab1-ce24e75f5a8f)
+
+Estimation Process:
+![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/d760c335-1672-477c-acb2-59b92193e8b8)
+
+Estimation Document:
+Estimation Document corresponding to the Estimation Document can be added.
+![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/7fd8a2d5-f287-4e23-9c69-e93d7ce73c40)
+
+
+
+
 
 
 

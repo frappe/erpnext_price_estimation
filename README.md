@@ -27,22 +27,24 @@ $ bench get-app erpnext_price_estimation https://github.com/frappe/erpnext_price
 Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
 #### 1. Start a new estimate
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/3e5b6b1a-61cc-4d22-a59b-f443c84ab5a3)
+![1](https://github.com/frappe/erpnext_price_estimation/assets/27720465/082aba0b-61f1-424d-9779-bd04419bd31e)
+
 
 
 #### 2. Select the modules
 
 Once you select the module, the estimate will be auto-updated. Edit as required.
 
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/374021c6-fcd4-4ea0-8913-974670c3a9be)
+![2](https://github.com/frappe/erpnext_price_estimation/assets/27720465/7e9d11c3-1cd2-4951-ade3-32d5dbbe7286)
 
 #### 3. Set your hourly rate
 
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/fa916efa-d358-4b84-995e-596a74ce25ee)
+![3](https://github.com/frappe/erpnext_price_estimation/assets/27720465/39073eb9-858f-4b34-8f7c-0fe6ccfe5ad9)
+
 
 #### 4. Add the Frappe Cloud details
+![4](https://github.com/frappe/erpnext_price_estimation/assets/27720465/dd7e77c2-1f41-4ea6-87a0-e83feb4fd422)
 
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/899a51ea-ef8e-44b1-813b-49a7d8a82f8d)
 
 #### 5. Add the AMC details
 

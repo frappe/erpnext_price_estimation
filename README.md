@@ -44,7 +44,7 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/899a51ea-ef8e-44b1-813b-49a7d8a82f8d)
 
-#### 5. Add the AMC Details:
+#### 5. Add the AMC details
 
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/64c8a7a1-d53a-42b8-bc68-14b5d47cdf87)
 

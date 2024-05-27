@@ -20,7 +20,7 @@ Once ERPNext is installed, add PRM app to your bench by running
 $ bench get-app erpnext_price_estimation https://github.com/frappe/erpnext_price_estimation.git
 ```
 
-## User Guide
+## 📘 User Guide
 
 https://github.com/frappe/erpnext_price_estimation/assets/27720465/10d308af-af89-4152-ac37-aaf3344445f3
 
@@ -85,10 +85,10 @@ Estimation Document corresponding to the Estimation Document can be added /modif
 
 
 
-## Contributing
+## 🤝 Contributing
 
 Please raise a pull request to add enhancements!
 
-## License
+## 📜 License
 
 MIT See [license.txt](https://github.com/frappe/partner_relationship_management/blob/main/license.txt) for more information.

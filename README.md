@@ -33,33 +33,33 @@ After installation, log in to your ERPNext instance using your credentials.
 Accessing ERPNext Price Estimation
 Navigate to the ERPNext Price Estimation module from the main dashboard.
 
-Effort Estimations
-Creating a New Estimation
-Navigate to the "Effort Estimations" section.
 
-Click on "Add ERPNext Estimation" to start a new project estimation.
+Creating a New Estimation
+Navigate to the "ERPNExt Price Estimations" section.
+
+Steps:
+1.Click on "Add ERPNext Estimation" to start a new project estimation.
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/51f164b3-7c6f-4eea-8969-362c4647a6bc)
 
-Fill in the details including module name, and scope of work.
+2.Fill in the details including module name, and scope of work.
 Picking the Modules:
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/374021c6-fcd4-4ea0-8913-974670c3a9be)
 
-Estimating Configuration Efforts and Total implementation hours
+3.Estimating Configuration Efforts and Total implementation hours
 Add the Total hourly Rate Manually.
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/fa916efa-d358-4b84-995e-596a74ce25ee)
 
 
-Add the Frappe Cloud Details:
+4.Add the Frappe Cloud Details:
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/899a51ea-ef8e-44b1-813b-49a7d8a82f8d)
 
-Add the AMC Details:
+5.Add the AMC Details:
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/64c8a7a1-d53a-42b8-bc68-14b5d47cdf87)
 
+6.Review and Save
 
-Review and Save
 
-
-Generating Print Formats
+## Generating Print Formats
 
 Go to the "Print Formats" section.
 Select "ERPNext Price Estimation - Compact."

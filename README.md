@@ -1,16 +1,16 @@
 ## ERPNext Price Estimation
 
-## Introduction
+## 🚀 Introduction
 
 This tool helps ERPNext implementors create a standardised quote. This tool will help a sales / estimation consultant to ask the right question to scope a standard / vanilla implementation. This tool will help you estimate the number of hours. You can choose your own rates.
 
-## Key Features
+## ✨ Key Features
 
 1. Pre-built module masters - list of all tasks associated with implementing a module
 2. Estimation - estimate for a particular customer
 3. Print Format - to present to the customer
 
-## Installation
+## 🛠 Installation
 
 Using bench, [install ERPNext](https://github.com/frappe/bench#installation) as mentioned here.
 

@@ -39,7 +39,9 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 #### 3. Set your hourly rate
 
-![3](https://github.com/frappe/erpnext_price_estimation/assets/27720465/39073eb9-858f-4b34-8f7c-0fe6ccfe5ad9)
+
+![3](https://github.com/frappe/erpnext_price_estimation/assets/27720465/e32b5ad3-8672-4ba6-83d0-bd3650adf2a0)
+
 
 
 #### 4. Add the Frappe Cloud details
@@ -48,7 +50,8 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 #### 5. Add the AMC details
 
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/64c8a7a1-d53a-42b8-bc68-14b5d47cdf87)
+![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/9f49a208-961d-4d71-a431-2a8cc23770ae)
+
 
 #### 6. Review and Save
 
@@ -56,6 +59,9 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 Go to the "Print Formats" section.
 Select "ERPNext Price Estimation - Compact."
+
+
+
 Generating Detailed Print Format
 In the "Print Formats" section, choose "ERPNext Price Estimation (Detailed)."
 Customize the print format if needed and generate the document.

@@ -1,18 +1,16 @@
 ## ERPNext Price Estimation
 
-### Introduction
-ERPNext, an open-source ERP system, offers a wide range of modules and functionalities to businesses of all sizes. However, implementing ERPNext require meticulous planning and configuration to meet the unique requirements of each organization. ERPNext Price Estimation simplifies this process by providing partners and consultants with a centralized platform to manage all aspects of ERPNext implementation projects. Also helps the Partners to estimate the configuration efforts. 
-### Key Features
-Comprehensive Module Details: ERPNext modules, including configurations, features, and customization options.
+## Introduction
 
-Effort Estimations: Plan implementation projects effectively with built-in tools for estimating configuration efforts, development tasks, and other project activities.
+This tool helps ERPNext implementors create a standardised quote. This tool will help a sales / estimation consultant to ask the right question to scope a standard / vanilla implementation. This tool will help you estimate the number of hours. You can choose your own rates.
 
-Print Formats: Generate professional print format 
+## Key Features
 
+1. Pre-built module masters - list of all tasks associated with implementing a module
+2. Estimation - estimate for a particular customer
+3. Print Format - to present to the customer
 
-By integrating with [ERPNext](https://github.com/frappe/erpnext), feature extensibility for estimating the configuration efforts. Meanwhile the [Frappe Framework](https://github.com/frappe/frappe) powers extensibility in terms of authentication and role based access permissions, notifications, workflows, emails and a lot more.
-
-### Installation
+## Installation
 
 Using bench, [install ERPNext](https://github.com/frappe/bench#installation) as mentioned here.
 
@@ -22,44 +20,37 @@ Once ERPNext is installed, add PRM app to your bench by running
 $ bench get-app erpnext_price_estimation https://github.com/frappe/erpnext_price_estimation.git
 ```
 
-### User Guide
-Getting Started
-Installation
-Follow the installation steps outlined in the Installation section above to install ERPNext and add the ERPNext Price Estimation app to your bench.
+## User Guide
 
-Login
-After installation, log in to your ERPNext instance using your credentials.
+### 1. Estimation
 
-Accessing ERPNext Price Estimation
-Navigate to the ERPNext Price Estimation module from the main dashboard.
+Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
+#### 1. Start a new estimate
 
-Creating a New Estimation
-Navigate to the "ERPNExt Price Estimations" section.
-
-Steps:
-1.Click on "Add ERPNext Estimation" to start a new project estimation.
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/51f164b3-7c6f-4eea-8969-362c4647a6bc)
 
-2.Fill in the details including module name, and scope of work.
-Picking the Modules:
+#### 2. Select the modules
+
+Once you select the module, the estimate will be auto-updated. Edit as required.
+
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/374021c6-fcd4-4ea0-8913-974670c3a9be)
 
-3.Estimating Configuration Efforts and Total implementation hours
-Add the Total hourly Rate Manually.
+#### 3. Set your hourly rate
+
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/fa916efa-d358-4b84-995e-596a74ce25ee)
 
+#### 4. Add the Frappe Cloud details
 
-4.Add the Frappe Cloud Details:
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/899a51ea-ef8e-44b1-813b-49a7d8a82f8d)
 
-5.Add the AMC Details:
+#### 5. Add the AMC Details:
+
 ![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/64c8a7a1-d53a-42b8-bc68-14b5d47cdf87)
 
-6.Review and Save
+#### 6. Review and Save
 
-
-## Generating Print Formats
+### 2. Generating Print Formats
 
 Go to the "Print Formats" section.
 Select "ERPNext Price Estimation - Compact."
@@ -67,11 +58,14 @@ Generating Detailed Print Format
 In the "Print Formats" section, choose "ERPNext Price Estimation (Detailed)."
 Customize the print format if needed and generate the document.
 
+### 3. Changing the masters
 
 
 
+## Contributing
 
+Please raise a pull request to add enhancements!
 
-#### License
+## License
 
 MIT See [license.txt](https://github.com/frappe/partner_relationship_management/blob/main/license.txt) for more information.

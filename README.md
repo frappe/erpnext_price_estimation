@@ -30,13 +30,16 @@ https://github.com/frappe/erpnext_price_estimation/assets/27720465/10d308af-af89
 Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
 #### 1. Start a new estimate
-![1](https://github.com/frappe/erpnext_price_estimation/assets/27720465/082aba0b-61f1-424d-9779-bd04419bd31e)
+
+![New_Estimate](https://github.com/frappe/erpnext_price_estimation/assets/27720465/d40310ba-6e7b-4050-8dfb-de1934cb9cdf)
 
 
 
 #### 2. Select the modules
 
 Once you select the module, the estimate will be auto-updated. Edit as required.
+
+![p_m](https://github.com/frappe/erpnext_price_estimation/assets/27720465/f90e75a6-8ccf-4927-8955-f2c38eda369d)
 
 
 
@@ -53,8 +56,6 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 
 #### 5. Add the AMC details
-
-
 
 ![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/04a53644-8c77-4556-9823-fe68b4db72d0)
 

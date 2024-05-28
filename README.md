@@ -38,15 +38,18 @@ Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
 Once you select the module, the estimate will be auto-updated. Edit as required.
 
-![2](https://github.com/frappe/erpnext_price_estimation/assets/27720465/7e9d11c3-1cd2-4951-ade3-32d5dbbe7286)
+
+
 
 #### 3. Set your hourly rate
-![3](https://github.com/frappe/erpnext_price_estimation/assets/27720465/cf664612-e3ce-4951-8e01-92966ad7cbe2)
+
+![t_h](https://github.com/frappe/erpnext_price_estimation/assets/27720465/872571b4-fbcb-46d7-a795-a55aab17f7d4)
 
 
 
 #### 4. Add the Frappe Cloud details
-![4](https://github.com/frappe/erpnext_price_estimation/assets/27720465/dd7e77c2-1f41-4ea6-87a0-e83feb4fd422)
+
+![f_C](https://github.com/frappe/erpnext_price_estimation/assets/27720465/8e30afab-dc71-47ae-8c1c-ed5ba87cc133)
 
 
 #### 5. Add the AMC details
@@ -55,7 +58,6 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 ![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/04a53644-8c77-4556-9823-fe68b4db72d0)
 
-![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/6b5373c5-cfdb-4228-b403-f0ecfa5f4969)
 
 
 
@@ -77,16 +79,18 @@ Customize the print format if needed and generate the document.
 ### 3. Changing the masters
 New modules,Estimation Process, Estimation Document  can be added as required.
 Modules:
-![Mod](https://github.com/frappe/erpnext_price_estimation/assets/27720465/21e2f0fb-1792-4df3-bcee-b0d699df428b)
+![n_m](https://github.com/frappe/erpnext_price_estimation/assets/27720465/d9d0e46f-4a70-48db-89d2-b8d63d3f652c)
 
 
 Estimation Process:
-![E_T](https://github.com/frappe/erpnext_price_estimation/assets/27720465/b7bc96cb-3b35-4da9-a8b4-a12ecbcfe86a)
+
+![E_P](https://github.com/frappe/erpnext_price_estimation/assets/27720465/f7802220-0519-4f6c-a7b8-d1dffb5d97b8)
 
 
 Estimation Document:
 Estimation Document corresponding to the Estimation Document can be added /modified.
-![E_D](https://github.com/frappe/erpnext_price_estimation/assets/27720465/5191e977-70eb-4c5f-900e-38ba91cc3bcb)
+
+![est](https://github.com/frappe/erpnext_price_estimation/assets/27720465/0760a781-a265-4236-90c7-5c5a65acecb9)
 
 
 

@@ -1,10 +1,7 @@
-// Copyright (c) 2024, frappe solutions and contributors
-// For license information, please see license.txt
-
 frappe.ui.form.on('ERPNext Price Estimation', {
     accounts: function(frm) {
         if (frm.doc.accounts) {
-            frm.events.add_efforts(frm, 'estimation_details_1', '', 'Accounts');
+            frm.events.add_efforts(frm, 'estimation_details_1', 'Accounts');
         } else {
             frm.clear_table("estimation_details_1");
             frm.refresh_field("estimation_details_1");
@@ -13,7 +10,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     buying: function(frm) {
         if (frm.doc.buying) {
-            frm.events.add_efforts(frm, 'estimation_details_2', '', 'Buying');
+            frm.events.add_efforts(frm, 'estimation_details_2', 'Buying');
         } else {
             frm.clear_table("estimation_details_2");
             frm.refresh_field("estimation_details_2");
@@ -22,7 +19,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     stock: function(frm) {
         if (frm.doc.stock) {
-            frm.events.add_efforts(frm, 'estimation_details_3', '', 'Stock');
+            frm.events.add_efforts(frm, 'estimation_details_3', 'Stock');
         } else {
             frm.clear_table("estimation_details_3");
             frm.refresh_field("estimation_details_3");
@@ -31,7 +28,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     crm: function(frm) {
         if (frm.doc.crm) {
-            frm.events.add_efforts(frm, 'estimation_details_4', '', 'CRM');
+            frm.events.add_efforts(frm, 'estimation_details_4', 'CRM');
         } else {
             frm.clear_table("estimation_details_4");
             frm.refresh_field("estimation_details_4");
@@ -40,7 +37,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     payroll: function(frm) {
         if (frm.doc.payroll) {
-            frm.events.add_efforts(frm, 'estimation_details_5', '', 'Payroll');
+            frm.events.add_efforts(frm, 'estimation_details_5', 'Payroll');
         } else {
             frm.clear_table("estimation_details_5");
             frm.refresh_field("estimation_details_5");
@@ -49,7 +46,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     selling: function(frm) {
         if (frm.doc.selling) {
-            frm.events.add_efforts(frm, 'estimation_details_6', '', 'Selling');
+            frm.events.add_efforts(frm, 'estimation_details_6', 'Selling');
         } else {
             frm.clear_table("estimation_details_6");
             frm.refresh_field("estimation_details_6");
@@ -58,7 +55,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     hrms: function(frm) {
         if (frm.doc.hrms) {
-            frm.events.add_efforts(frm, 'estimation_details_7', '', 'HR');
+            frm.events.add_efforts(frm, 'estimation_details_7', 'HR');
         } else {
             frm.clear_table("estimation_details_7");
             frm.refresh_field("estimation_details_7");
@@ -67,8 +64,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     projects: function(frm) {
         if (frm.doc.projects) {
-            frm.events.add_efforts(frm, 'estimation_details_8', '', 'Projects');
-            debugger
+            frm.events.add_efforts(frm, 'estimation_details_8', 'Projects');
         } else {
             frm.clear_table("estimation_details_8");
             frm.refresh_field("estimation_details_8");
@@ -77,7 +73,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     manufacturing: function(frm) {
         if (frm.doc.manufacturing) {
-            frm.events.add_efforts(frm, 'estimation_details_9', '', 'Manufacturing');
+            frm.events.add_efforts(frm, 'estimation_details_9', 'Manufacturing');
         } else {
             frm.clear_table("estimation_details_9");
             frm.refresh_field("estimation_details_9");
@@ -86,7 +82,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     setup: function(frm) {
         if (frm.doc.setup) {
-            frm.events.add_efforts(frm, 'estimation_details_10', '', 'Setup');
+            frm.events.add_efforts(frm, 'estimation_details_10', 'Setup');
         } else {
             frm.clear_table("estimation_details_10");
             frm.refresh_field("estimation_details_10");
@@ -95,16 +91,16 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     },
     healthcare: function(frm) {
         if (frm.doc.healthcare) {
-            frm.events.add_efforts(frm, 'estimation_details_11', '', 'Healthcare');
+            frm.events.add_efforts(frm, 'estimation_details_11', 'Healthcare');
         } else {
             frm.clear_table("estimation_details_11");
             frm.refresh_field("estimation_details_11");
             frm.events.calculate_totals(frm);
         }
     },
-     education: function(frm) {
+    education: function(frm) {
         if (frm.doc.education) {
-            frm.events.add_efforts(frm, 'estimation_details_12', '', 'Education');
+            frm.events.add_efforts(frm, 'estimation_details_12', 'Education');
         } else {
             frm.clear_table("estimation_details_12");
             frm.refresh_field("estimation_details_12");
@@ -136,50 +132,51 @@ frappe.ui.form.on('ERPNext Price Estimation', {
             });
         }
     },
-    validate: function(frm){
+    validate: function(frm) {
         frm.events.calculate_totals(frm);
     },
-    
     calculate_totals: function(frm) {
         frm.doc.total_config_effort = 0;
         frm.doc.total_other_effort = 0;
         frm.doc.total_efforts = 0;
         frm.doc.total_customization_effort = 0;
-        
-        let module_tables = ['estimation_details_1', 'estimation_details_2', 'estimation_details_3', 
-        'estimation_details_4', 'estimation_details_5', 'estimation_details_6', 'estimation_details_7', 
-        'estimation_details_8', 'estimation_details_9', 'estimation_details_10','estimation_details_11','estimation_details_12']; 
-        
-        $.each(cur_frm.doc.customization_estimations, function(i,d){
-            frm.doc.total_customization_effort = flt(d.estimated_time) + frm.doc.total_customization_effort
-        })
-        
+
+        let module_tables = [
+            'estimation_details_1', 'estimation_details_2', 'estimation_details_3',
+            'estimation_details_4', 'estimation_details_5', 'estimation_details_6',
+            'estimation_details_7', 'estimation_details_8', 'estimation_details_9',
+            'estimation_details_10', 'estimation_details_11', 'estimation_details_12'
+        ];
+
+        $.each(cur_frm.doc.customization_estimations, function(i, d) {
+            frm.doc.total_customization_effort = flt(d.estimated_time) + frm.doc.total_customization_effort;
+        });
+
         $.each(module_tables || [], function(i, module) {
             $.each(frm.doc[module] || [], function(i, row) {
                 frm.doc.total_config_effort += flt(row.configuration_efforts);
                 frm.doc.total_other_effort += flt(row.other_efforts);
             });
-        }); 
-        
-        frm.doc.total_efforts = frm.doc.total_config_effort + frm.doc.total_other_effort +  frm.doc.total_customization_effort;
+        });
+
+        frm.doc.total_efforts = frm.doc.total_config_effort + frm.doc.total_other_effort + frm.doc.total_customization_effort;
         frm.refresh_field('total_config_effort');
         frm.refresh_field('total_other_effort');
         frm.refresh_field('total_efforts');
         frm.refresh_field('total_customization_effort');
-
     },
     add_efforts: function(frm, table, process, module) {
         frappe.call({
-            'method': 'get_process_documents',
-            'args': {
-                'process': frm.doc[process],
-                'module': module
+            method: 'erpnext_price_estimation.erpnext_price_estimation.doctype.erpnext_price_estimation.erpnext_estimation.get_process_documents',
+            args: {
+                process: frm.doc[process],
+                module: module
             },
-            'callback': function(r) {
+            callback: function(r) {
                 let current_list = [];
                 $.each(frm.doc[table] || [], function(i, row) {
                     current_list.push(row.estimation_document);
-                }) 
+                });
                 $.each(r.message || [], function(i, row) {
                     if (!current_list.includes(row.document_name)) {
                         let item = frappe.model.add_child(frm.doc, 'Estimation Detail', table);
@@ -189,7 +186,7 @@ frappe.ui.form.on('ERPNext Price Estimation', {
                         frappe.model.set_value(item.doctype, item.name, 'other_efforts', row.other_effort);
                     }
                 });
-                frm.refresh_field(table, '');
+                frm.refresh_field(table);
                 if (process) {
                     frm.set_value(process, '');
                 }
@@ -226,13 +223,14 @@ frappe.ui.form.on('ERPNext Price Estimation', {
     add_efforts_10: function(frm) {
         frm.events.add_efforts(frm, 'estimation_details_10', 'select_process_10');
     },
-     add_efforts_11: function(frm) {
+    add_efforts_11: function(frm) {
         frm.events.add_efforts(frm, 'estimation_details_11', 'select_process_11');
     },
-     add_efforts_12: function(frm) {
+    add_efforts_12: function(frm) {
         frm.events.add_efforts(frm, 'estimation_details_12', 'select_process_12');
-    },
+    }
 });
+
 frappe.ui.form.on('Estimation Detail', {
     configuration_efforts: function(frm) {
         frm.events.calculate_totals(frm);
@@ -275,7 +273,7 @@ frappe.ui.form.on('Estimation Detail', {
     },
     estimation_details_12_remove: function(frm, cdt, cdn) {
         frm.events.calculate_totals(frm);
-    },
+    }
 });
 
 frappe.ui.form.on('ERPNext Price Estimation', {

@@ -68,8 +68,7 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 Go to the "Print Formats" section.
 Select "ERPNext Price Estimation - Compact."
-
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/51df6a71-f715-4aaa-9457-05a92dc30110)
+![p_f](https://github.com/frappe/erpnext_price_estimation/assets/27720465/cf21ecab-1575-4dc5-bf07-9f698ad82cb1)
 
 
 

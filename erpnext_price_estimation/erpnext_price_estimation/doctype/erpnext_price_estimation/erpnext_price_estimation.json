@@ -59,14 +59,11 @@
   "setup_section_section",
   "estimation_details_10",
   "customizations_section",
-  "customization_status",
-  "customization_request_details",
-  "customization_estimations",
-  "total_customization_effort",
+  "estimation_details_13",
   "healthcare_section",
   "estimation_details_11",
   "education_section",
-  "select_process12",
+  "estimation_details_12",
   "total_hours_section",
   "total_config_effort",
   "total_hourly_rate",
@@ -381,29 +378,6 @@
    "label": "Customizations"
   },
   {
-   "default": "Open",
-   "fieldname": "customization_status",
-   "fieldtype": "Select",
-   "label": "Customization Status",
-   "options": "\nOpen\nWIP\nCompleted"
-  },
-  {
-   "fieldname": "customization_request_details",
-   "fieldtype": "Text Editor",
-   "label": "Customization Request Details"
-  },
-  {
-   "fieldname": "customization_estimations",
-   "fieldtype": "Table",
-   "label": "Customization Estimations",
-   "options": "Delivery Request Estimation"
-  },
-  {
-   "fieldname": "total_customization_effort",
-   "fieldtype": "Float",
-   "label": "Total Customization Effort"
-  },
-  {
    "fieldname": "total_hours_section",
    "fieldtype": "Section Break",
    "label": "Total Implementation Hours"
@@ -463,12 +437,6 @@
    "fieldname": "education_section",
    "fieldtype": "Section Break",
    "label": "Education"
-  },
-  {
-   "fieldname": "select_process12",
-   "fieldtype": "Link",
-   "label": "Select Process",
-   "options": "Estimation Process"
   },
   {
    "fieldname": "estimation_details_11",
@@ -570,10 +538,22 @@
   {
    "fieldname": "column_break_29",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estimation_details_12",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "estimation_details_13",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
   }
  ],
  "links": [],
- "modified": "2024-05-22 07:54:30.551936",
+ "modified": "2024-05-29 17:19:44.050297",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

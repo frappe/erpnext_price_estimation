@@ -9,3 +9,6 @@ fixtures = [
     "Estimation Process",
     "Estimation Document"
 ]
+override_whitelisted_methods = {
+    "erpnext_price_estimation.erpnext_price_estimation.doctype.erpnext_price_estimation.erpnext_estimation.get_process_documents": "erpnext_price_estimation.erpnext_price_estimation.doctype.erpnext_price_estimation.erpnext_estimation.get_process_documents"
+}

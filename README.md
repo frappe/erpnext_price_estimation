@@ -67,9 +67,10 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 ### 2. Generating Print Formats
 
 Go to the "Print Formats" section.
-Select "ERPNext Price Estimation - Compact."
-![p_f](https://github.com/frappe/erpnext_price_estimation/assets/27720465/cf21ecab-1575-4dc5-bf07-9f698ad82cb1)
+Select "ERPNext Price Estimation"
 
+
+![Print](https://github.com/frappe/erpnext_price_estimation/assets/27720465/990f344d-325a-4df0-8bf7-762aba2203ac)
 
 
 
@@ -77,7 +78,8 @@ Select "ERPNext Price Estimation - Compact."
 Customize the print format if needed and generate the document.
 
 ### 3. Changing the masters
-New modules,Estimation Process, Estimation Document  can be added as required.
+New modules,Estimation Process, Estimation Document  can be added and modified as required.
+
 Modules:
 ![new_module](https://github.com/frappe/erpnext_price_estimation/assets/27720465/cdcaf4e8-87d0-40bc-ac8f-0116bb0a4b25)
 

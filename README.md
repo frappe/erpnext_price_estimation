@@ -30,8 +30,8 @@ https://github.com/frappe/erpnext_price_estimation/assets/27720465/10d308af-af89
 Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
 #### 1. Start a new estimate
+![erpnext_price_estimate](https://github.com/frappe/erpnext_price_estimation/assets/27720465/87e15383-33b9-4890-8470-ec2cbb6c0f64)
 
-![New_Estimate](https://github.com/frappe/erpnext_price_estimation/assets/27720465/d40310ba-6e7b-4050-8dfb-de1934cb9cdf)
 
 
 
@@ -51,13 +51,15 @@ Once you select the module, the estimate will be auto-updated. Edit as required.
 
 
 #### 4. Add the Frappe Cloud details
+![frappe_cloud](https://github.com/frappe/erpnext_price_estimation/assets/27720465/b6990e45-704c-404e-9d10-e007f5aab1c7)
 
-![f_C](https://github.com/frappe/erpnext_price_estimation/assets/27720465/8e30afab-dc71-47ae-8c1c-ed5ba87cc133)
+
 
 
 #### 5. Add the AMC details
 
-![5](https://github.com/frappe/erpnext_price_estimation/assets/27720465/04a53644-8c77-4556-9823-fe68b4db72d0)
+![amc](https://github.com/frappe/erpnext_price_estimation/assets/27720465/c00ccb1d-312d-4975-b567-5158711ca24f)
+
 
 
 
@@ -89,8 +91,8 @@ Estimation Process:
 
 Estimation Document:
 Estimation Document corresponding to the Estimation Document can be added /modified.
+![estimation_doc](https://github.com/frappe/erpnext_price_estimation/assets/27720465/80f667a7-1384-465d-b2a0-d71a51bf0588)
 
-![est](https://github.com/frappe/erpnext_price_estimation/assets/27720465/0760a781-a265-4236-90c7-5c5a65acecb9)
 
 
 

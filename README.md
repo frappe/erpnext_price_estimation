@@ -34,19 +34,17 @@ Go to the "ERPNext Price Estimation" module, or create via awesomebar.
 
 
 
-
 #### 2. Select the modules
 
 Once you select the module, the estimate will be auto-updated. Edit as required.
-
-![p_m](https://github.com/frappe/erpnext_price_estimation/assets/27720465/f90e75a6-8ccf-4927-8955-f2c38eda369d)
+![select_modules](https://github.com/frappe/erpnext_price_estimation/assets/27720465/e8f36a9d-136d-4675-9b4d-550bd469a17b)
 
 
 
 
 #### 3. Set your hourly rate
+![hourly_rate](https://github.com/frappe/erpnext_price_estimation/assets/27720465/48760442-a1cb-4435-aeef-d0adf235c875)
 
-![t_h](https://github.com/frappe/erpnext_price_estimation/assets/27720465/872571b4-fbcb-46d7-a795-a55aab17f7d4)
 
 
 
@@ -81,12 +79,12 @@ Customize the print format if needed and generate the document.
 ### 3. Changing the masters
 New modules,Estimation Process, Estimation Document  can be added as required.
 Modules:
-![n_m](https://github.com/frappe/erpnext_price_estimation/assets/27720465/d9d0e46f-4a70-48db-89d2-b8d63d3f652c)
+![new_module](https://github.com/frappe/erpnext_price_estimation/assets/27720465/cdcaf4e8-87d0-40bc-ac8f-0116bb0a4b25)
 
 
 Estimation Process:
+![estimation_process](https://github.com/frappe/erpnext_price_estimation/assets/27720465/1c1198de-c411-4386-b7ec-ed1bf17c91cc)
 
-![E_P](https://github.com/frappe/erpnext_price_estimation/assets/27720465/f7802220-0519-4f6c-a7b8-d1dffb5d97b8)
 
 
 Estimation Document:

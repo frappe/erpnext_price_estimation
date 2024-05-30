@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_import": 1,
+ "allow_rename": 1,
  "autoname": "field:process_name",
  "creation": "2024-05-13 16:42:54.749102",
  "doctype": "DocType",
@@ -34,7 +35,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-15 14:42:35.447473",
+ "modified": "2024-05-30 12:04:56.630523",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Estimation Process",

@@ -12,6 +12,8 @@
   "column_break_28_column",
   "domain",
   "status",
+  "introduction_section_section",
+  "introduction",
   "customer_details",
   "project_and_account_brief",
   "qualification_details_section",
@@ -65,6 +67,7 @@
   "education_section",
   "estimation_details_12",
   "total_hours_section",
+  "currency",
   "total_config_effort",
   "total_hourly_rate",
   "column_break_25",
@@ -86,7 +89,9 @@
   "amc_rate",
   "column_break_29",
   "amc_uom",
-  "amc_amount"
+  "amc_amount",
+  "thanks_section_section",
+  "thanks"
  ],
  "fields": [
   {
@@ -452,7 +457,8 @@
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
-   "label": "Total Amount"
+   "label": "Total Amount",
+   "options": "currency"
   },
   {
    "default": "Today",
@@ -494,7 +500,8 @@
   {
    "fieldname": "amount",
    "fieldtype": "Currency",
-   "label": "Amount"
+   "label": "Amount",
+   "options": "currency"
   },
   {
    "fieldname": "column_break_26",
@@ -518,7 +525,8 @@
   {
    "fieldname": "amc_rate",
    "fieldtype": "Currency",
-   "label": "Rate"
+   "label": "Rate",
+   "options": "currency"
   },
   {
    "fieldname": "amc_uom",
@@ -529,7 +537,8 @@
   {
    "fieldname": "amc_amount",
    "fieldtype": "Currency",
-   "label": "Amount"
+   "label": "Amount",
+   "options": "currency"
   },
   {
    "fieldname": "column_break_28",
@@ -550,10 +559,34 @@
    "fieldtype": "Table",
    "label": "Estimation Details",
    "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "introduction",
+   "fieldtype": "Text Editor",
+   "label": "Introduction Section"
+  },
+  {
+   "fieldname": "introduction_section_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "thanks_section_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "thanks",
+   "fieldtype": "Text Editor",
+   "label": "End Section"
   }
  ],
  "links": [],
- "modified": "2024-05-29 17:19:44.050297",
+ "modified": "2024-05-30 19:49:52.658920",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

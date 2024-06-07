@@ -70,7 +70,8 @@ Go to the "Print Formats" section.
 Select "ERPNext Price Estimation"
 
 
-![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/bc2e27ef-2b59-4462-b004-be7cadd9aff8)
+![ERPNext_Price_Estimation](https://github.com/frappe/erpnext_price_estimation/assets/27720465/378d8a6a-535c-459f-92d1-43ee0b865e44)
+
 
 
 

@@ -70,7 +70,7 @@ Go to the "Print Formats" section.
 Select "ERPNext Price Estimation"
 
 
-![Print](https://github.com/frappe/erpnext_price_estimation/assets/27720465/990f344d-325a-4df0-8bf7-762aba2203ac)
+![image](https://github.com/frappe/erpnext_price_estimation/assets/27720465/bc2e27ef-2b59-4462-b004-be7cadd9aff8)
 
 
 
@@ -88,13 +88,12 @@ Estimation Process:
 ![estimation_process](https://github.com/frappe/erpnext_price_estimation/assets/27720465/1c1198de-c411-4386-b7ec-ed1bf17c91cc)
 
 
-
 Estimation Document:
 Estimation Document corresponding to the Estimation Document can be added /modified.
 ![estimation_doc](https://github.com/frappe/erpnext_price_estimation/assets/27720465/80f667a7-1384-465d-b2a0-d71a51bf0588)
 
 
-
+Note: Estimation Process Needs to be added for the Setup, Customization Module.
 
 ## 🤝 Contributing
 

@@ -10,7 +10,6 @@ class ERPNextPriceEstimation(Document):
 @frappe.whitelist()
 def get_process_documents(process=None, module=None):
     filters = {}
-
     if process:
         filters['process'] = process
     if module:

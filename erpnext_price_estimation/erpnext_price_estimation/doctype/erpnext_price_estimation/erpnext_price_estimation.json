@@ -41,31 +41,31 @@
   "projects",
   "healthcare",
   "accounts_module_section",
-  "estimation_details_1",
+  "accounts_details",
   "buying_section",
-  "estimation_details_2",
+  "buying_details",
   "stock_section",
-  "estimation_details_3",
+  "stock_details",
   "crm_section",
-  "estimation_details_4",
+  "crm_details",
   "payroll_section",
-  "estimation_details_5",
+  "payroll_details",
   "selling_section",
-  "estimation_details_6",
+  "selling_details",
   "hrms_section",
-  "estimation_details_7",
+  "hrms_details",
   "projects_section",
-  "estimation_details_8",
+  "projects_details",
   "manufacturing_section_section",
-  "estimation_details_9",
+  "manufacturing_details",
   "setup_section_section",
-  "estimation_details_10",
+  "setup_details",
   "customizations_section",
-  "estimation_details_13",
+  "customization_details",
   "healthcare_section",
-  "estimation_details_11",
+  "healthcare_details",
   "education_section",
-  "estimation_details_12",
+  "education_details",
   "total_hours_section",
   "currency",
   "total_config_effort",
@@ -263,22 +263,10 @@
    "label": "Accounts"
   },
   {
-   "fieldname": "estimation_details_1",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "depends_on": "eval:doc.buying",
    "fieldname": "buying_section",
    "fieldtype": "Section Break",
    "label": "Buying"
-  },
-  {
-   "fieldname": "estimation_details_2",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
   },
   {
    "depends_on": "eval:doc.stock",
@@ -287,22 +275,10 @@
    "label": "Stock"
   },
   {
-   "fieldname": "estimation_details_3",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "depends_on": "eval:doc.crm",
    "fieldname": "crm_section",
    "fieldtype": "Section Break",
    "label": "CRM"
-  },
-  {
-   "fieldname": "estimation_details_4",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
   },
   {
    "depends_on": "eval:doc.payroll",
@@ -311,22 +287,10 @@
    "label": "Payroll"
   },
   {
-   "fieldname": "estimation_details_5",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "depends_on": "eval:doc.selling",
    "fieldname": "selling_section",
    "fieldtype": "Section Break",
    "label": "Selling"
-  },
-  {
-   "fieldname": "estimation_details_6",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
   },
   {
    "depends_on": "eval:doc.hrms",
@@ -335,22 +299,10 @@
    "label": "HRMS"
   },
   {
-   "fieldname": "estimation_details_7",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "depends_on": "eval:doc.projects",
    "fieldname": "projects_section",
    "fieldtype": "Section Break",
    "label": "Projects"
-  },
-  {
-   "fieldname": "estimation_details_8",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
   },
   {
    "depends_on": "eval:doc.manufacturing",
@@ -359,22 +311,10 @@
    "label": "Manufacturing Section"
   },
   {
-   "fieldname": "estimation_details_9",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "depends_on": "eval:doc.setup",
    "fieldname": "setup_section_section",
    "fieldtype": "Section Break",
    "label": "Setup Section"
-  },
-  {
-   "fieldname": "estimation_details_10",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
   },
   {
    "depends_on": "eval:doc.customization",
@@ -442,12 +382,6 @@
    "fieldname": "education_section",
    "fieldtype": "Section Break",
    "label": "Education"
-  },
-  {
-   "fieldname": "estimation_details_11",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
   },
   {
    "fieldname": "total_hourly_rate",
@@ -549,18 +483,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "estimation_details_12",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
-   "fieldname": "estimation_details_13",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "fieldname": "currency",
    "fieldtype": "Link",
    "label": "Currency",
@@ -583,10 +505,88 @@
    "fieldname": "thanks",
    "fieldtype": "Text Editor",
    "label": "End Section"
+  },
+  {
+   "fieldname": "accounts_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "buying_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "stock_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "crm_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "payroll_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "selling_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "hrms_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "projects_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "manufacturing_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "setup_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "healthcare_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "education_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "fieldname": "customization_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
   }
  ],
  "links": [],
- "modified": "2024-05-30 19:49:52.658920",
+ "modified": "2024-06-12 15:49:25.244037",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

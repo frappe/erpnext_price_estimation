@@ -1,0 +1,126 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+{% if letter_head and not no_letterhead %}
+		<div class="letter-head">{{ letter_head }}</div>
+{% endif %}
+    <h1 class="main-heading">ERPNext Price Estimation</h1>
+        <div class="sub-header">
+            <div class="customer-details">
+                <p class="main">{{ doc.customer_name or '' }}</p>
+                <p>{{ doc.domain or '' }}</p>
+            </div>
+            <div class="estimate-details">
+                <p class="main">{{doc.name or '' }}</p>
+                <p>{{ frappe.utils.formatdate(doc.posting_date, "dd-MM-yyyy") or '' }}</p>
+            </div>
+        </div>
+        <div class="user-text">
+            <p>{{ doc.introduction or '' }}</p>
+        </div>
+        <p class="main-title">Project Brief</p>
+        <div class="user-text">{{ doc.project_and_account_brief or '' }}</div>
+        <p class="main-title">Implementation Modules</p>
+        <div class="user-text module-text">{% set modules = [] %} {% if doc.accounts == 1 %} {% set modules = modules + ['Accounts'] %} {% endif %} {% if doc.payroll == 1 %} {% set modules = modules + ['Payroll'] %} {% endif %} {% if doc.manufacturing == 1 %} {% set modules = modules + ['Manufacturing'] %} {% endif %} {% if doc.buying == 1 %} {% set modules = modules + ['Buying'] %} {% endif %} {% if doc.selling == 1 %} {% set modules = modules + ['Selling'] %} {% endif %} {% if doc.setup == 1 %} {% set modules = modules + ['Setup'] %} {% endif %} {% if doc.stock == 1 %} {% set modules = modules + ['Stock'] %} {% endif %} {% if doc.hrms == 1 %} {% set modules = modules + ['HRMS'] %} {% endif %} {% if doc.customization == 1 %} {% set modules = modules + ['Customization'] %} {% endif %} {% if doc.crm == 1 %} {% set modules = modules + ['CRM'] %} {% endif %} {% if doc.projects == 1 %} {% set modules = modules + ['Projects'] %} {% endif %} {% if doc.healthcare == 1 %} {% set modules = modules + ['Healthcare'] %} {% endif %} {% if doc.education == 1 %} {% set modules = modules + ['Education'] %} {% endif %} {{ modules | join(', ') }}</div>
+            <div class="efforts-container">
+            <div class="effort-wrapper">
+                <p class="title">Configuration Efforts</p>
+                <p class="value">{{ frappe.format(doc.total_config_effort or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
+            </div>
+           <div class="effort-wrapper">
+                <p class="title">Other Efforts</p>
+                <p class="value">{{ frappe.format(doc.total_other_effort or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
+            </div>
+           <div class="effort-wrapper">
+                <p class="title">Total Hours</p>
+                <p class="value">{{ frappe.format(doc.total_efforts or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
+            </div>
+           <div class="effort-wrapper right-align">
+                <p class="title">Rate / Hr</p>
+                <p class="value">{{ frappe.format(doc.total_hourly_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
+            </div>
+           <div class="effort-wrapper right-align">
+                <p class="title">Total Cost</p>
+                <p class="value">{{ frappe.format(doc.total_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
+            </div>
+        </div>
+    
+        <p class="main-title" style="padding-bottom: 0px;">Frappe Cloud</p>
+            <div class="fc-container">
+            <div class="fc-wrapper">
+                <p class="title">Plan</p>
+                <p class="value">{{doc.frappe_cloud_plan or 'Frappe Cloud Hosting'}}</p>
+            </div>
+           <div class="fc-wrapper">
+                <p class="title">{{ doc.uom + "s"}}</p>
+                <p class="value">{{ frappe.format(doc.validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
+            </div>
+           <div class="fc-wrapper right-align">
+                <p class="title">Cost</p>
+                <p class="value">{{ frappe.format(doc.rate or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
+            </div>
+           <div class="fc-wrapper right-align">
+                <p class="title">Total Cost</p>
+                <p class="value">{{ frappe.format(doc.amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
+            </div>
+        </div>
+    
+        <p class="main-title" style="padding-bottom: 0px;">Annual Maintenance Charges</p>
+            <div class="amc-container">
+            <div class="amc-wrapper">
+                <p class="title">Rate per year</p>
+                <p class="value">{{ frappe.format(doc.amc_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
+            </div>
+           <div class="amc-wrapper">
+                <p class="title">Duration</p>
+                <p class="value">{{ frappe.format(doc.amc_validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
+            </div>
+           <div class="amc-wrapper right-align" style="border: none;">
+                <p class="title">Total Cost</p>
+                <p class="value">{{ frappe.format(doc.amc_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
+            </div>
+           <div class="amc-wrapper right-align">
+            </div>
+        </div>
+    
+        <p class="main-title">Module Wise Estimate</p>
+        {%- set modules = ["accounts", "buying", "stock", "crm", "payroll", "selling", "hrms", "projects", "manufacturing", "setup", "customization", "healthcare", "education"] -%}
+        {%- set modules_label = {"accounts": "Accounts", "buying": "Buying", "stock": "Stock", "crm": "CRM", "payroll": "Payroll", "selling": "Selling", "hrms": "HRMS", "projects": "Projects", "manufacturing": "Manufacturing", "setup": "Setup", "customization": "Customization", "healthcare": "Healthcare", "education": "Education"} -%}
+        {%- for module in modules -%}
+            {% if doc.get(module) == 1 and  doc.get(module + "_details")|length > 0 %}
+            <p class="table-module-title">{{modules_label.get(module)}}</p>
+            <table class="module-wise-estimate-table no-break-inside table-container">
+                <thead>
+                  <tr>
+                    <th class="text-left">Sr.</th>
+                    <th class="text-left">Process</th>
+                    <th class="text-left">Document</th>
+                    <th class="text-left">Configuration Hours</th>
+                    <th class="text-left">Other Hours</th>
+                  </tr>
+                </thead>
+                {%- for row in doc.get(module + "_details") -%}
+                <tbody>
+                  <tr>
+                    <td>{{ row.idx }}</td>
+                    <td>{{ row.estimation_process }}</td>
+                    <td>{{ row.estimation_document }}</td>
+                    <td>{{ row.configuration_efforts }}</td>
+                    <td>{{ row.other_efforts }}</td>
+                  </tr>
+                {%- endfor -%}
+                </tbody>
+              </table>
+            {%- endif -%}
+        {%- endfor -%}
+        <div class="left-align">
+          <p>{{ doc.thanks or '' }}</p>
+        </div>
+    {% if not no_letterhead and footer %}
+    <div class="letter-head-footer">
+        {{ footer }}
+    </div>
+    {% endif %}
+<style>
+    {% include "erpnext_price_estimation/erpnext_price_estimation/print_format/erpnext_price_estimate/erpnext_price_estimate.css" %}
+</style>

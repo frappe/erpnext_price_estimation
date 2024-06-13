@@ -44,7 +44,7 @@
                 <p class="value">{{ frappe.format(doc.total_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
             </div>
         </div>
-
+    
         <p class="main-title" style="padding-bottom: 0px;">Frappe Cloud</p>
             <div class="fc-container">
             <div class="fc-wrapper">
@@ -64,7 +64,7 @@
                 <p class="value">{{ frappe.format(doc.amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
             </div>
         </div>
-
+    
         <p class="main-title" style="padding-bottom: 0px;">Annual Maintenance Charges</p>
             <div class="amc-container">
             <div class="amc-wrapper">
@@ -72,7 +72,7 @@
                 <p class="value">{{ frappe.format(doc.amc_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p>
             </div>
            <div class="amc-wrapper">
-                <p class="title">{{ doc.uom + "s"}}</p>
+                <p class="title">Duration</p>
                 <p class="value">{{ frappe.format(doc.amc_validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p>
             </div>
            <div class="amc-wrapper right-align" style="border: none;">
@@ -82,7 +82,7 @@
            <div class="amc-wrapper right-align">
             </div>
         </div>
-
+    
         <p class="main-title">Module Wise Estimate</p>
         {%- set modules = ["accounts", "buying", "stock", "crm", "payroll", "selling", "hrms", "projects", "manufacturing", "setup", "customization", "healthcare", "education"] -%}
         {%- set modules_label = {"accounts": "Accounts", "buying": "Buying", "stock": "Stock", "crm": "CRM", "payroll": "Payroll", "selling": "Selling", "hrms": "HRMS", "projects": "Projects", "manufacturing": "Manufacturing", "setup": "Setup", "customization": "Customization", "healthcare": "Healthcare", "education": "Education"} -%}
@@ -95,12 +95,12 @@
                     <th class="text-left">Sr.</th>
                     <th class="text-left">Process</th>
                     <th class="text-left">Document</th>
-                    <th class="text-left">Configuration Efforts</th>
-                    <th class="text-left">Other Efforts</th>
+                    <th class="text-left">Configuration Hours</th>
+                    <th class="text-left">Other Hours</th>
                   </tr>
                 </thead>
-                <tbody>
                 {%- for row in doc.get(module + "_details") -%}
+                <tbody>
                   <tr>
                     <td>{{ row.idx }}</td>
                     <td>{{ row.estimation_process }}</td>

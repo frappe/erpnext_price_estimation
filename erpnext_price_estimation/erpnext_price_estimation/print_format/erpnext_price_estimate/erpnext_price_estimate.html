@@ -24,18 +24,18 @@
         <div class="user-text module-text">{% set modules = [] %} {% if doc.accounts == 1 %} {% set modules = modules + ['Accounts'] %} {% endif %} {% if doc.payroll == 1 %} {% set modules = modules + ['Payroll'] %} {% endif %} {% if doc.manufacturing == 1 %} {% set modules = modules + ['Manufacturing'] %} {% endif %} {% if doc.buying == 1 %} {% set modules = modules + ['Buying'] %} {% endif %} {% if doc.selling == 1 %} {% set modules = modules + ['Selling'] %} {% endif %} {% if doc.setup == 1 %} {% set modules = modules + ['Setup'] %} {% endif %} {% if doc.stock == 1 %} {% set modules = modules + ['Stock'] %} {% endif %} {% if doc.hrms == 1 %} {% set modules = modules + ['HRMS'] %} {% endif %} {% if doc.customization == 1 %} {% set modules = modules + ['Customization'] %} {% endif %} {% if doc.crm == 1 %} {% set modules = modules + ['CRM'] %} {% endif %} {% if doc.projects == 1 %} {% set modules = modules + ['Projects'] %} {% endif %} {% if doc.healthcare == 1 %} {% set modules = modules + ['Healthcare'] %} {% endif %} {% if doc.education == 1 %} {% set modules = modules + ['Education'] %} {% endif %} {{ modules | join(', ') }}</div>
         <table class="module-wise-estimate-table no-break-inside table-container">
             <thead>
-                <th style="width: 14%;"><p class="title">Configuration Efforts</p></th>
-                <th style="width: 12%;"><p class="title">Other Efforts</p></th>
-                <th style="width: 12%;"><p class="title">Total Hours</p></th>
-                <th style="width: 10%;"><p class="title right-align">Rate / Hr</p></th>
-                <th style="width: 12%;"><p class="title right-align">Total Cost</p></th>
+                <th style="width: 24%;"><p class="title">Configuration Efforts</p></th>
+                <th style="width: 20%;"><p class="title">Other Efforts</p></th>
+                <th style="width: 20%;"><p class="title">Total Hours</p></th>
+                <th style="width: 18%;"><p class="title right-align">Rate / Hr</p></th>
+                <th style="width: 18%;"><p class="title right-align">Total Cost</p></th>
             </thead>
             <tbody>
-                <td style="width: 14%;"><p class="value">{{ frappe.format(doc.total_config_effort or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
-                <td style="width: 12%;"><p class="value">{{ frappe.format(doc.total_other_effort or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
-                <td style="width: 12%;"><p class="value">{{ frappe.format(doc.total_efforts or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
-                <td style="width: 10%;"><p class="value right-align">{{ frappe.format(doc.total_hourly_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
-                <td style="width: 12%;"><p class="value right-align">{{ frappe.format(doc.total_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
+                <td style="width: 24%;"><p class="value">{{ frappe.format(doc.total_config_effort or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
+                <td style="width: 20%;"><p class="value">{{ frappe.format(doc.total_other_effort or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
+                <td style="width: 20%;"><p class="value">{{ frappe.format(doc.total_efforts or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
+                <td style="width: 18%;"><p class="value right-align">{{ frappe.format(doc.total_hourly_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
+                <td style="width: 18%;"><p class="value right-align">{{ frappe.format(doc.total_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
 
             </tbody>
         </table>
@@ -43,16 +43,16 @@
         <p class="main-title">Frappe Cloud</p>
         <table class="module-wise-estimate-table no-break-inside table-container">
             <thead>
-                <th style="width: 23.5%;"><p class="title">Plan</p></th>
-                <th style="width: 13%;"><p class="title">Duration ( {{doc.uom + "s"}} )</p></th>
-                <th style="width: 8.5%;"><p class="title right-align">Cost</p></th>
-                <th style="width: 10%;"><p class="title right-align">Total Cost</p></th>
+                <th style="width: 40%;"><p class="title">Plan</p></th>
+                <th style="width: 24%;"><p class="title">Duration ( {{doc.uom + "s"}} )</p></th>
+                <th style="width: 18%;"><p class="title right-align">Cost</p></th>
+                <th style="width: 18%;"><p class="title right-align">Total Cost</p></th>
             </thead>
             <tbody>
-                <td style="width: 23.5%;"><p class="value">{{doc.frappe_cloud_plan or 'Frappe Cloud Hosting'}}</p></td>
-                <td style="width: 13%;"><p class="value">{{ frappe.format(doc.validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
-                <td style="width: 8.5%;"><p class="value right-align">{{ frappe.format(doc.rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
-                <td style="width: 10%;"><p class="value right-align">{{ frappe.format(doc.amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
+                <td style="width: 40%;"><p class="value">{{doc.frappe_cloud_plan or 'Frappe Cloud Hosting'}}</p></td>
+                <td style="width: 24%;"><p class="value">{{ frappe.format(doc.validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
+                <td style="width: 18%;"><p class="value right-align">{{ frappe.format(doc.rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
+                <td style="width: 18%;"><p class="value right-align">{{ frappe.format(doc.amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
 
             </tbody>
         </table>
@@ -60,14 +60,14 @@
         <p class="main-title">Annual Maintenance Charges</p>
         <table class="module-wise-estimate-table no-break-inside table-container">
             <thead>
-                <th style="width: 57%;"><p class="title">Duration ( {{doc.amc_uom + "s"}} )</p></th>
-                <th style="width: 21%;"><p class="title">Rate per {{doc.amc_uom}}</p></th>
-                <th style="width: 22%;"><p class="title right-align">Total Cost</p></th>
+                <th style="width: 64%;"><p class="title">Duration ( {{doc.amc_uom + "s"}} )</p></th>
+                <th style="width: 18%;"><p class="title right-align">Rate per {{doc.amc_uom}}</p></th>
+                <th style="width: 18%;"><p class="title right-align">Total Cost</p></th>
             </thead>
             <tbody>
-                <td style="width: 57%;"><p class="value">{{ frappe.format(doc.amc_validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
-                <td style="width: 21%;"><p class="value">{{ frappe.format(doc.amc_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
-                <td style="width: 22%;"><p class="value right-align">{{ frappe.format(doc.amc_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
+                <td style="width: 64%;"><p class="value">{{ frappe.format(doc.amc_validity or 0.00, {'fieldtype': "Float", 'options': doc}) }}</p></td>
+                <td style="width: 18%;"><p class="value right-align">{{ frappe.format(doc.amc_rate or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
+                <td style="width: 18%;"><p class="value right-align">{{ frappe.format(doc.amc_amount or 0.00, {'fieldtype': "Currency", 'options': doc}) }}</p></td>
 
             </tbody>
         </table>
@@ -76,7 +76,7 @@
         {%- set modules = ["accounts", "buying", "stock", "crm", "payroll", "selling", "hrms", "projects", "manufacturing", "setup", "customization", "healthcare", "education"] -%}
         {%- set modules_label = {"accounts": "Accounts", "buying": "Buying", "stock": "Stock", "crm": "CRM", "payroll": "Payroll", "selling": "Selling", "hrms": "HRMS", "projects": "Projects", "manufacturing": "Manufacturing", "setup": "Setup", "customization": "Customization", "healthcare": "Healthcare", "education": "Education"} -%}
         {%- for module in modules -%}
-            {% if doc.get(module) == 1 and  doc.get(module + "_details")|length > 0 %}
+            {% if doc.get(module) == 1 and  doc.get(module + "_details") and doc.get(module + "_details")|length > 0 %}
             <p class="table-module-title">{{modules_label.get(module)}}</p>
             <table class="module-wise-estimate-table no-break-inside table-container">
                 <thead>

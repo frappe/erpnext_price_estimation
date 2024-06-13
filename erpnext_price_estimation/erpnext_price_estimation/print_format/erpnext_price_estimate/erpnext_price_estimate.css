@@ -73,8 +73,6 @@ th:first-child, td:first-child {
 
 .right-align {
     text-align: right;
-    width: 100px;
-    max-width: 100px;
 }
 
 .table-module-title {

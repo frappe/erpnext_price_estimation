@@ -1,0 +1,247 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.084433",
+  "module": "ERPNext Price Estimation",
+  "name": "ERPNext Price Estimation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.110137",
+  "module": "Subcontracting",
+  "name": "Subcontracting"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.116475",
+  "module": "Bulk Transaction",
+  "name": "Bulk Transaction"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.120578",
+  "module": "Telephony",
+  "name": "Telephony"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.125471",
+  "module": "Communication",
+  "name": "Communication"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.129690",
+  "module": "Quality Management",
+  "name": "Quality Management"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.133739",
+  "module": "ERPNext Integrations",
+  "name": "ERPNext Integrations"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.137648",
+  "module": "Regional",
+  "name": "Regional"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.142428",
+  "module": "Maintenance",
+  "name": "Maintenance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.146179",
+  "module": "Portal",
+  "name": "Portal"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.150259",
+  "module": "Assets",
+  "name": "Assets"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.153707",
+  "module": "Utilities",
+  "name": "Utilities"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.157092",
+  "module": "Support",
+  "name": "Support"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.162589",
+  "module": "Stock",
+  "name": "Stock"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.166586",
+  "module": "Manufacturing",
+  "name": "Manufacturing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.170284",
+  "module": "Setup",
+  "name": "Setup"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.174753",
+  "module": "Selling",
+  "name": "Selling"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.178985",
+  "module": "Projects",
+  "name": "Projects"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.182639",
+  "module": "Buying",
+  "name": "Buying"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.186013",
+  "module": "CRM",
+  "name": "CRM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.189626",
+  "module": "Accounts",
+  "name": "Accounts"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.193135",
+  "module": "Automation",
+  "name": "Automation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.196718",
+  "module": "Social",
+  "name": "Social"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.200155",
+  "module": "Contacts",
+  "name": "Contacts"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.204468",
+  "module": "Printing",
+  "name": "Printing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.209273",
+  "module": "Integrations",
+  "name": "Integrations"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.213316",
+  "module": "Desk",
+  "name": "Desk"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.217999",
+  "module": "Geo",
+  "name": "Geo"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.223411",
+  "module": "Custom",
+  "name": "Custom"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.228894",
+  "module": "Email",
+  "name": "Email"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.233289",
+  "module": "Workflow",
+  "name": "Workflow"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.237454",
+  "module": "Website",
+  "name": "Website"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.241566",
+  "module": "Core",
+  "name": "Core"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.245284",
+  "module": "Healthcare",
+  "name": "Healthcare"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Module",
+  "modified": "2024-06-07 17:18:24.249188",
+  "module": "Education",
+  "name": "Education"
+ }
+]

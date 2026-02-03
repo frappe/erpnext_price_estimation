@@ -5,18 +5,62 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_x0ot"
+  "module",
+  "task_id",
+  "task_name",
+  "column_break_bsln",
+  "doctypes_involved",
+  "default_configuration_effort",
+  "other_effort"
  ],
  "fields": [
   {
-   "fieldname": "section_break_x0ot",
-   "fieldtype": "Section Break"
+   "fieldname": "task_id",
+   "fieldtype": "Data",
+   "label": "Task ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "doctypes_involved",
+   "fieldtype": "Text",
+   "label": "Doctypes Involved"
+  },
+  {
+   "fieldname": "module",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Module",
+   "options": "Module",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bsln",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_configuration_effort",
+   "fieldtype": "Float",
+   "label": "Default Configuration Effort"
+  },
+  {
+   "fieldname": "other_effort",
+   "fieldtype": "Float",
+   "label": "Other Effort"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-01 18:28:27.771414",
+ "modified": "2026-02-03 02:37:07.865100",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Task",
@@ -39,5 +83,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "task_id"
 }

@@ -23,7 +23,7 @@ MODULE_PREFIX_MAP = {
 class Task(Document):
 	def validate(self):
 		self.validate_task_id()
-		self.validate_doctypes_involved()
+		# self.validate_doctypes_involved()
 
 	def validate_task_id(self):
 		if not self.task_id:
@@ -41,34 +41,34 @@ class Task(Document):
 				f"Expected format like '{prefix}-001'."
 			)
 
-	def validate_doctypes_involved(self):
-		if not self.doctypes_involved:
-			return
+	# def validate_doctypes_involved(self):
+	# 	if not self.doctypes_involved:
+	# 		return
 
-		for line in self.doctypes_involved.splitlines():
-			stripped_line = line.strip()
+	# 	for line in self.doctypes_involved.splitlines():
+	# 		stripped_line = line.strip()
 
-			if not stripped_line:
-				continue
+	# 		if not stripped_line:
+	# 			continue
 
-			if not stripped_line.startswith("- "):
-				frappe.throw(
-					"Invalid doctypes_involved format. Expected '- <Doctype>' per line."
-				)
+	# 		if not stripped_line.startswith("- "):
+	# 			frappe.throw(
+	# 				"Invalid doctypes_involved format. Expected '- <Doctype>' per line."
+	# 			)
 
-			doctype = stripped_line[2:].strip()
+	# 		doctype = stripped_line[2:].strip()
 
-			if not doctype:
-				frappe.throw(
-					"Invalid doctypes_involved entry: empty doctype."
-				)
+	# 		if not doctype:
+	# 			frappe.throw(
+	# 				"Invalid doctypes_involved entry: empty doctype."
+	# 			)
 
-			if "," in doctype:
-				frappe.throw(
-					"Invalid doctypes_involved entry: comma-separated values are not allowed."
-				)
+	# 		if "," in doctype:
+	# 			frappe.throw(
+	# 				"Invalid doctypes_involved entry: comma-separated values are not allowed."
+	# 			)
 
-			if "-" in doctype:
-				frappe.throw(
-					"Invalid doctypes_involved entry: multiple doctypes in a single line."
-				)
+	# 		if "-" in doctype:
+	# 			frappe.throw(
+	# 				"Invalid doctypes_involved entry: multiple doctypes in a single line."
+	# 			)

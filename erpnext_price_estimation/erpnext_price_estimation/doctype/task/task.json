@@ -9,7 +9,7 @@
   "task_id",
   "task_name",
   "column_break_bsln",
-  "doctypes_involved",
+  "task_reference",
   "default_configuration_effort",
   "other_effort"
  ],
@@ -26,21 +26,14 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Task Name",
-   "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "doctypes_involved",
-   "fieldtype": "Text",
-   "label": "Doctypes Involved"
   },
   {
    "fieldname": "module",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Module",
-   "options": "Module",
-   "reqd": 1
+   "options": "Module"
   },
   {
    "fieldname": "column_break_bsln",
@@ -55,28 +48,30 @@
    "fieldname": "other_effort",
    "fieldtype": "Float",
    "label": "Other Effort"
+  },
+  {
+   "fieldname": "task_reference",
+   "fieldtype": "Text",
+   "label": "Task Reference"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-03 02:37:07.865100",
+ "modified": "2026-02-03 23:55:37.003483",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Task",
  "owner": "Administrator",
  "permissions": [
   {
-   "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
+   "share": 1
   }
  ],
  "row_format": "Dynamic",

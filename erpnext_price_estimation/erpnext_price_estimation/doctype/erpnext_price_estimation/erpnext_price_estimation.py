@@ -4,22 +4,28 @@
 import frappe
 from frappe.model.document import Document
 
+
 class ERPNextPriceEstimation(Document):
     pass
 
-@frappe.whitelist()
-def get_process_documents(process=None, module=None):
-    filters = {}
-    if process:
-        filters['process'] = process
-    if module:
-        filters['module'] = module
 
-    process_details = frappe.get_all(
-        'Estimation Document', 
-        fields=['document_name', 'process_name', 'configuration_effort', 'other_effort'], 
-        filters=filters
+@frappe.whitelist()
+def get_task_documents(process=None, module=None):
+    filters = {}
+
+    if module:
+        filters["module"] = module
+
+    task_details = frappe.get_all(
+        "Task",
+        fields=[
+            "task_id",
+            "task_name",
+            "task_reference",
+            "default_configuration_effort",
+            "other_effort",
+        ],
+        filters=filters,
     )
 
-    return process_details
-
+    return task_details

@@ -28,23 +28,24 @@
   "discovery_call_notes",
   "pick_modules_section",
   "accounts",
-  "payroll",
+  "hrms",
+  "selling",
+  "column_break_afgl",
+  "asset",
   "manufacturing",
-  "education",
+  "setup",
   "column_break_8",
   "buying",
-  "selling",
-  "setup",
-  "column_break_10",
+  "payroll",
   "stock",
-  "hrms",
-  "customization",
-  "column_break_12",
+  "column_break_10",
   "crm",
-  "projects",
-  "healthcare",
-  "accounts_module_section",
+  "project",
+  "custom_tasks",
+  "accounts_section",
   "accounts_details",
+  "asset_section",
+  "asset_details",
   "buying_section",
   "buying_details",
   "stock_section",
@@ -57,34 +58,30 @@
   "selling_details",
   "hrms_section",
   "hrms_details",
-  "projects_section",
-  "projects_details",
-  "manufacturing_section_section",
+  "project_section",
+  "project_details",
+  "manufacturing_section",
   "manufacturing_details",
-  "setup_section_section",
+  "setup_section",
   "setup_details",
-  "customizations_section",
-  "customization_details",
-  "healthcare_section",
-  "healthcare_details",
-  "education_section",
-  "education_details",
+  "custom_task_section",
+  "custom_tasks_details",
   "total_hours_section",
   "currency",
   "total_config_effort",
-  "total_hourly_rate",
-  "column_break_25",
   "total_other_effort",
-  "total_efforts",
+  "column_break_25",
+  "total_combined_effort",
+  "total_hourly_rate",
   "total_amount",
   "frappe_cloud_details",
   "frappe_cloud_plan",
   "column_break_26",
-  "validity",
-  "rate",
+  "cloud_validity",
+  "cloud_rate",
   "column_break_27",
   "uom",
-  "amount",
+  "cloud_amount",
   "amc_details",
   "amc",
   "column_break_28",
@@ -237,32 +234,9 @@
   },
   {
    "default": "0",
-   "fieldname": "customization",
-   "fieldtype": "Check",
-   "label": "Customization"
-  },
-  {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break",
-   "hide_border": 1
-  },
-  {
-   "default": "0",
    "fieldname": "crm",
    "fieldtype": "Check",
    "label": "CRM"
-  },
-  {
-   "default": "0",
-   "fieldname": "projects",
-   "fieldtype": "Check",
-   "label": "Projects"
-  },
-  {
-   "depends_on": "eval:doc.accounts",
-   "fieldname": "accounts_module_section",
-   "fieldtype": "Section Break",
-   "label": "Accounts"
   },
   {
    "depends_on": "eval:doc.buying",
@@ -301,30 +275,6 @@
    "label": "HRMS"
   },
   {
-   "depends_on": "eval:doc.projects",
-   "fieldname": "projects_section",
-   "fieldtype": "Section Break",
-   "label": "Projects"
-  },
-  {
-   "depends_on": "eval:doc.manufacturing",
-   "fieldname": "manufacturing_section_section",
-   "fieldtype": "Section Break",
-   "label": "Manufacturing Section"
-  },
-  {
-   "depends_on": "eval:doc.setup",
-   "fieldname": "setup_section_section",
-   "fieldtype": "Section Break",
-   "label": "Setup Section"
-  },
-  {
-   "depends_on": "eval:doc.customization",
-   "fieldname": "customizations_section",
-   "fieldtype": "Section Break",
-   "label": "Customizations"
-  },
-  {
    "fieldname": "total_hours_section",
    "fieldtype": "Section Break",
    "label": "Total Implementation Hours"
@@ -332,7 +282,8 @@
   {
    "fieldname": "total_config_effort",
    "fieldtype": "Float",
-   "label": "Total Configuration Efforts"
+   "label": "Total Configuration Effort",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_25",
@@ -341,19 +292,14 @@
   {
    "fieldname": "total_other_effort",
    "fieldtype": "Float",
-   "label": "Total Other Efforts"
-  },
-  {
-   "fieldname": "total_efforts",
-   "fieldtype": "Float",
-   "label": "Total Efforts"
+   "label": "Total Other Effort",
+   "read_only": 1
   },
   {
    "fetch_from": "partner_lead.lead_name",
    "fieldname": "customer",
-   "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer"
+   "fieldtype": "Data",
+   "label": "Customer"
   },
   {
    "fetch_from": "customer.customer_name",
@@ -362,39 +308,17 @@
    "label": "Customer Name"
   },
   {
-   "default": "0",
-   "fieldname": "healthcare",
-   "fieldtype": "Check",
-   "label": "Healthcare"
-  },
-  {
-   "default": "0",
-   "fieldname": "education",
-   "fieldtype": "Check",
-   "label": "Education"
-  },
-  {
-   "depends_on": "eval:doc.healthcare",
-   "fieldname": "healthcare_section",
-   "fieldtype": "Section Break",
-   "label": "Healthcare"
-  },
-  {
-   "depends_on": "eval:doc.education",
-   "fieldname": "education_section",
-   "fieldtype": "Section Break",
-   "label": "Education"
-  },
-  {
    "fieldname": "total_hourly_rate",
    "fieldtype": "Float",
    "label": "Total Hourly Rate"
   },
   {
+   "default": "0",
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "label": "Total Amount",
-   "options": "currency"
+   "options": "currency",
+   "read_only": 1
   },
   {
    "default": "Today",
@@ -418,26 +342,10 @@
    "label": "Frappe Cloud Plan"
   },
   {
-   "fieldname": "rate",
-   "fieldtype": "Currency",
-   "label": "Rate"
-  },
-  {
-   "fieldname": "validity",
-   "fieldtype": "Float",
-   "label": "Validity"
-  },
-  {
    "fieldname": "uom",
    "fieldtype": "Select",
    "label": "UOM",
    "options": "Month\nYear"
-  },
-  {
-   "fieldname": "amount",
-   "fieldtype": "Currency",
-   "label": "Amount",
-   "options": "currency"
   },
   {
    "fieldname": "column_break_26",
@@ -551,12 +459,6 @@
    "options": "Estimation Detail"
   },
   {
-   "fieldname": "projects_details",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "fieldname": "manufacturing_details",
    "fieldtype": "Table",
    "label": "Estimation Details",
@@ -569,26 +471,8 @@
    "options": "Estimation Detail"
   },
   {
-   "fieldname": "healthcare_details",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
-   "fieldname": "education_details",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
-   "fieldname": "customization_details",
-   "fieldtype": "Table",
-   "label": "Estimation Details",
-   "options": "Estimation Detail"
-  },
-  {
    "fieldname": "company",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Company",
    "options": "Company"
   },
@@ -603,14 +487,112 @@
    "fieldtype": "Dynamic Link",
    "label": "Party",
    "options": "opportunity_from"
+  },
+  {
+   "fieldname": "cloud_validity",
+   "fieldtype": "Float",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "cloud_rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "cloud_amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "total_combined_effort",
+   "fieldtype": "Float",
+   "label": "Total Combined Effort",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "asset",
+   "fieldtype": "Check",
+   "label": "Asset"
+  },
+  {
+   "fieldname": "column_break_afgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "project",
+   "fieldtype": "Check",
+   "label": "Project"
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_tasks",
+   "fieldtype": "Check",
+   "label": "Custom Tasks"
+  },
+  {
+   "fieldname": "asset_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.asset",
+   "fieldname": "asset_section",
+   "fieldtype": "Section Break",
+   "label": "Asset"
+  },
+  {
+   "depends_on": "eval:doc.project",
+   "fieldname": "project_section",
+   "fieldtype": "Section Break",
+   "label": "Project"
+  },
+  {
+   "fieldname": "project_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Estimation Detail"
+  },
+  {
+   "depends_on": "eval:doc.setup",
+   "fieldname": "setup_section",
+   "fieldtype": "Section Break",
+   "label": "Setup"
+  },
+  {
+   "depends_on": "eval:doc.custom_tasks",
+   "fieldname": "custom_task_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Tasks"
+  },
+  {
+   "depends_on": "eval:doc.accounts",
+   "fieldname": "accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts"
+  },
+  {
+   "depends_on": "eval:doc.manufacturing",
+   "fieldname": "manufacturing_section",
+   "fieldtype": "Section Break",
+   "label": "Manufacturing Section"
+  },
+  {
+   "fieldname": "custom_tasks_details",
+   "fieldtype": "Table",
+   "label": "Estimation Details",
+   "options": "Custom Estimation Detail"
   }
  ],
  "links": [],
- "modified": "2024-07-20 13:44:05.260736",
+ "modified": "2026-02-04 00:31:13.093756",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -626,6 +608,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [

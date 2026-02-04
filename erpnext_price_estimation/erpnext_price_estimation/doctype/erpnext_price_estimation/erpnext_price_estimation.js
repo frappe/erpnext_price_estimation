@@ -214,12 +214,6 @@ function add_efforts(frm, table, module) {
         frappe.model.set_value(
           entry.doctype,
           entry.name,
-          "task_id",
-          row.task_id
-        );
-        frappe.model.set_value(
-          entry.doctype,
-          entry.name,
           "task",
           row.task_name
         );

@@ -19,13 +19,13 @@ def get_task_documents(process=None, module=None):
     task_details = frappe.get_all(
         "Task",
         fields=[
-            "task_id",
+            "name",
             "task_name",
             "task_reference",
             "default_configuration_effort",
             "other_effort",
         ],
         filters=filters,
+        order_by="name",
     )
-
     return task_details

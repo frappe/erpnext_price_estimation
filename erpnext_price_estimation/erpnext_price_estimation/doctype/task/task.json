@@ -6,7 +6,6 @@
  "engine": "InnoDB",
  "field_order": [
   "module",
-  "task_id",
   "task_name",
   "column_break_bsln",
   "task_reference",
@@ -15,18 +14,10 @@
  ],
  "fields": [
   {
-   "fieldname": "task_id",
-   "fieldtype": "Data",
-   "label": "Task ID",
-   "read_only": 1,
-   "unique": 1
-  },
-  {
    "fieldname": "task_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Task Name",
-   "unique": 1
+   "label": "Task Name"
   },
   {
    "fieldname": "module",
@@ -58,13 +49,14 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-03 23:55:37.003483",
+ "modified": "2026-02-04 22:15:41.772321",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Task",
  "owner": "Administrator",
  "permissions": [
   {
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -78,6 +70,5 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "title_field": "task_id"
+ "states": []
 }

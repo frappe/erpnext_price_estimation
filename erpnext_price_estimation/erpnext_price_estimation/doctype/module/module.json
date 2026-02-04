@@ -2,24 +2,24 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:module",
+ "autoname": "field:module_name",
  "creation": "2024-05-15 14:29:50.246862",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "module"
+  "module_name"
  ],
  "fields": [
   {
-   "fieldname": "module",
+   "fieldname": "module_name",
    "fieldtype": "Data",
-   "label": "Module",
+   "label": "Module Name",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-15 14:40:39.336327",
+ "modified": "2026-02-03 23:55:23.262265",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Module",
@@ -27,18 +27,16 @@
  "owner": "Administrator",
  "permissions": [
   {
-   "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
+   "share": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []

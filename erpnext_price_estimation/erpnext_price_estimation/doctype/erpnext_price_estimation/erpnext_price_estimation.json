@@ -298,8 +298,9 @@
   {
    "fetch_from": "partner_lead.lead_name",
    "fieldname": "customer",
-   "fieldtype": "Data",
-   "label": "Customer"
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
   },
   {
    "fetch_from": "customer.customer_name",
@@ -472,7 +473,7 @@
   },
   {
    "fieldname": "company",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Company",
    "options": "Company"
   },
@@ -588,7 +589,7 @@
   }
  ],
  "links": [],
- "modified": "2026-02-04 00:31:13.093756",
+ "modified": "2026-02-05 00:36:25.148959",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

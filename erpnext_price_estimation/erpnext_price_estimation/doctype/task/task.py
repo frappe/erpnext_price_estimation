@@ -1,9 +1,8 @@
 # Copyright (c) 2026, frappe solutions and contributors
 # For license information, please see license.txt
 
-import re
-
-import frappe
+# import re
+# import frappe
 from frappe.model.document import Document
 
 MODULE_PREFIX_MAP = {
@@ -24,24 +23,25 @@ MODULE_PREFIX_MAP = {
 
 class Task(Document):
     def validate(self):
-        self.validate_task_id()
+        pass
+        # self.validate_task_id()
         # self.validate_doctypes_involved()
 
-    def validate_task_id(self):
-        if not self.task_id:
-            frappe.throw("Task ID must be provided.")
+    # def validate_task_id(self):
+    #     if not self.task_id:
+    #         frappe.throw("Task ID must be provided.")
 
-        prefix = MODULE_PREFIX_MAP.get(self.module)
-        if not prefix:
-            frappe.throw(f"No prefix defined for module '{self.module}'.")
+    #     prefix = MODULE_PREFIX_MAP.get(self.module)
+    #     if not prefix:
+    #         frappe.throw(f"No prefix defined for module '{self.module}'.")
 
-        pattern = f"^{prefix}-\\d{{3}}$"
+    #     pattern = f"^{prefix}-\\d{{3}}$"
 
-        if not re.match(pattern, self.task_id):
-            frappe.throw(
-                f"Task ID '{self.task_id}' is invalid for module '{self.module}'. "
-                f"Expected format like '{prefix}-001'."
-            )
+    #     if not re.match(pattern, self.task_id):
+    #         frappe.throw(
+    #             f"Task ID '{self.task_id}' is invalid for module '{self.module}'. "
+    #             f"Expected format like '{prefix}-001'."
+    #         )
 
     # def validate_doctypes_involved(self):
     # 	if not self.doctypes_involved:

@@ -1,0 +1,1361 @@
+[
+  {
+    "doctype": "Task",
+    "name": "SU-001",
+    "module": "Setup",
+    "task_name": "Setting up the staging site",
+    "task_reference": "- Setting up a staging site on FC",
+    "default_configuration_effort": 0.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-002",
+    "module": "Setup",
+    "task_name": "Creating company structure",
+    "task_reference": "- Company",
+    "default_configuration_effort": 0.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-003",
+    "module": "Setup",
+    "task_name": "Creating roles and assigning permissions",
+    "task_reference": "- Role Profile \n - Role\n - Role Permission Manager \n - Role Permission for Page and report",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-004",
+    "module": "Setup",
+    "task_name": "Creating users and assigning access rights",
+    "task_reference": "- User \n - User Permission",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-005",
+    "module": "Setup",
+    "task_name": "Designing Letterheads",
+    "task_reference": "- Letterhead",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-006",
+    "module": "Setup",
+    "task_name": "Designing Print Formats",
+    "task_reference": "- Print Format",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-007",
+    "module": "Setup",
+    "task_name": "Setting up approval workflows",
+    "task_reference": "- Workflow State \n - Workflow Action \n - Workflow",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-008",
+    "module": "Setup",
+    "task_name": "Configuring system wide settings",
+    "task_reference": "- System Settings \n - Session Defaults \n - Global Defaults \n  - Document Naming \n - Log Settings",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-009",
+    "module": "Setup",
+    "task_name": "Configuring module settings",
+    "task_reference": "- Accounting \n - CRM \n - Selling \n - Buying \n - Stock \n - Manufacturing \n - Asset \n - HR \n - Payroll \n - Project \n - Quality",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-010",
+    "module": "Setup",
+    "task_name": "Setting Up Module Dashboards",
+    "task_reference": "- Accounting \n - CRM \n - Selling \n - Buying \n - Stock \n - Manufacturing \n - Asset \n - HR \n - Payroll \n - Project \n - Quality",
+    "default_configuration_effort": 3,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-011",
+    "module": "Setup",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-012",
+    "module": "Setup",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-013",
+    "module": "Setup",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-014",
+    "module": "Setup",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SU-015",
+    "module": "Setup",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-001",
+    "module": "Accounts",
+    "task_name": "Creating the Chart of Accounts",
+    "task_reference": "- Chart of Accounts",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-002",
+    "module": "Accounts",
+    "task_name": "Setting up master data",
+    "task_reference": "- Fiscal Year \n - Accounting Period \n - Payment Terms \n - Finance Book",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-003",
+    "module": "Accounts",
+    "task_name": "Creating cost centres",
+    "task_reference": "- Chart of Cost Centres \n - Cost Centre Allocation",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-004",
+    "module": "Accounts",
+    "task_name": "Creating accounting dimensions",
+    "task_reference": "- Accounting Dimensions",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-005",
+    "module": "Accounts",
+    "task_name": "Setting up budgets and allocations",
+    "task_reference": "- Monthly Distribution \n - Budget",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-006",
+    "module": "Accounts",
+    "task_name": "Configuring taxes",
+    "task_reference": "- Sales Taxes and Charges Template \n - Purchase Taxes and Charges Template \n - Item Tax Template \n  - Tax Rules \n - Tax Categories \n - Tax Withholding Category \n - Lower Deduction Certificate",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-007",
+    "module": "Accounts",
+    "task_name": "Entering opening account balances",
+    "task_reference": "- Opening Invoice Creation Tool \n - Chart Of Accounts Importer \n - Payment Entry \n - Journal Entry Template \n - Journal Entry \n - Period Closing Voucher",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-008",
+    "module": "Accounts",
+    "task_name": "Setting up payment basics",
+    "task_reference": "- Payment Entry \n - Journal Entry \n - Journal Entry Template \n - Payment Request",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-009",
+    "module": "Accounts",
+    "task_name": "Setting up multi-currency",
+    "task_reference": "- Currency \n - Currency Exchange \n - Exchange Rate Revaluation",
+    "default_configuration_effort": 0.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-010",
+    "module": "Accounts",
+    "task_name": "Configuring bank accounts and banking essential",
+    "task_reference": "- Bank \n - Bank Account \n - Bank Reconciliation \n - Bank Clearance \n - Bank Reconciliation Statement \n - Plaid Statement",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-011",
+    "module": "Accounts",
+    "task_name": "Setting up subscriptions",
+    "task_reference": "- Subscription Settings \n - Subscription Plan \n - Subscription",
+    "default_configuration_effort": 0.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-012",
+    "module": "Accounts",
+    "task_name": "Setting up share management",
+    "task_reference": "- Shareholder \n - Share Transfer \n - Share Ledger \n - Share Balance",
+    "default_configuration_effort": 0.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-013",
+    "module": "Accounts",
+    "task_name": "Generating accounting reports",
+    "task_reference": "Reports provide a complete financial overview, covering trial balance, profit and loss, balance sheet, cash flow, consolidated statements, accounts receivable and payable, party-wise trial balance, invoice-based payment periods, sales partner commissions, customer credit balances, sales payment summaries, and address and contact details.",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-014",
+    "module": "Accounts",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-015",
+    "module": "Accounts",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-016",
+    "module": "Accounts",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-017",
+    "module": "Accounts",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AC-018",
+    "module": "Accounts",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-001",
+    "module": "Asset",
+    "task_name": "Setup Asset Masters", 
+    "task_reference": "- Asset \n - Asset Category \n - Location \n - Asset Movement",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-002",
+    "module": "Asset",
+    "task_name": "Asset Maintenance", 
+    "task_reference": "- Asset Maintenance Team \n - Asset Maintenance \n - Asset Repair \n - Asset Maintenance Log \n - Asset Value Adjustment \n - Asset Capitalisation",
+    "default_configuration_effort": 2.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-003",
+    "module": "Asset",
+    "task_name": "Asset Transactions", 
+    "task_reference": "- Configure asset value adjustments, record asset purchases automatically, and process asset sales.",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-004",
+    "module": "Asset",
+    "task_name": "Discarding Assets", 
+    "task_reference": "- Asset Depreciation Schedule \n - Asset Depreciation Ledger",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-005",
+    "module": "Asset",
+    "task_name": "Assets Reports", 
+    "task_reference": "- Create reports providing visibility into asset registers, depreciation, asset movements, maintenance history and asset value changes.",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-006",
+    "module": "Asset",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-007",
+    "module": "Asset",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-008",
+    "module": "Asset",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-009",
+    "module": "Asset",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "AS-010",
+    "module": "Asset",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-001",
+    "module": "Buying",
+    "task_name": "Setting up supplier master",
+    "task_reference": "- Supplier Group \n  - Supplier \n - Contact \n - Address",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-002",
+    "module": "Buying",
+    "task_name": "Creating items and setting item prices",
+    "task_reference": "- Item \n - Item Price \n - Price List \n - Item Group \n - Promotional Scheme \n - Product Bundle",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-003",
+    "module": "Buying",
+    "task_name": "Setting up supplier scorecard",
+    "task_reference": "- Supplier Scorecard \n - Supplier Scorecard Criteria \n - Supplier Scorecard Variable \n  - Supplier Scorecard Standing",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-004",
+    "module": "Buying",
+    "task_name": "Setting up material request process",
+    "task_reference": "- Material Request",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-005",
+    "module": "Buying",
+    "task_name": "Setting up RFQ process",
+    "task_reference": "- Request for Quotation",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-006",
+    "module": "Buying",
+    "task_name": "Recording supplier quotations",
+    "task_reference": "- Supplier Quotation",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-007",
+    "module": "Buying",
+    "task_name": "Creating purchase orders",
+    "task_reference": "- Purchase Order (Create and manage POs for stock, non-stock or mixed items, including sub-contracted items, taxes, pricing rules, updates and fetching from material requests).",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-008",
+    "module": "Buying",
+    "task_name": "Creating purchase receipts",
+    "task_reference": "- Purchase Receipt (Create and manage PRs from POs, handle taxes, partial receipts, sub-contracted items, check stock/accounting impact, split POs, and process purchase returns.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-009",
+    "module": "Buying",
+    "task_name": "Creating purchase invoices",
+    "task_reference": "- Purchase Invoice (Create and manage PIs from PR/PO with taxes, stock updates, accounting checks, advances, debit notes, payment terms, multiple PIs and payment entries.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-010",
+    "module": "Buying",
+    "task_name": "Generating purchase reports",
+    "task_reference": "Reports providing insights into orders, suppliers, procurement trends, item histories, receipts and invoices, subcontracted materials, supplier quotations, pending material requests, and supplier contact details.",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-011",
+    "module": "Buying",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-012",
+    "module": "Buying",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-013",
+    "module": "Buying",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-014",
+    "module": "Buying",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "BY-015",
+    "module": "Buying",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-001",
+    "module": "CRM",
+    "task_name": "CRM Masters",
+    "task_reference": "- Sales Stage \n - Sales Person \n - Customer Group \n  - Territory \n - Lead Source \n  - Contract \n  - Appointment",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-002",
+    "module": "CRM",
+    "task_name": "Lead Creation Flow",
+    "task_reference": "- Lead (Create Leads individually, for organizations or automatically from communications.)",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-003",
+    "module": "CRM",
+    "task_name": "Conversion to Opportunities",
+    "task_reference": "- Opportunity (Create opportunities from a lead or directly, from communication and mark opportunities as lost when needed.)",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-004",
+    "module": "CRM",
+    "task_name": "Generation of Quotations",
+    "task_reference": "- Quotation(Create quotations in ERPNext from opportunities or leads for sales or maintenance for both service and non-service items.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-005",
+    "module": "CRM",
+    "task_name": "Setup Campaigns",
+    "task_reference": "- Campaign \n - Email Campaign \n - Newsletter \n - SMS Centre \n - SMS Log \n - Email Group \n - SMS Settings",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-006",
+    "module": "CRM",
+    "task_name": "CRM Reports",
+    "task_reference": "Create CRM reports providing insights into leads, opportunities, quotations, sales orders, customer interactions, campaign performance, and salesperson activities to track and improve sales and marketing effectiveness.",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-007",
+    "module": "CRM",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-008",
+    "module": "CRM",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-009",
+    "module": "CRM",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-010",
+    "module": "CRM",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "CM-011",
+    "module": "CRM",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-001",
+    "module": "Selling",
+    "task_name": "Setting up selling essentials",
+    "task_reference": "- Sales Partners \n - Sales Persons \n - Blanket Orders",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-002",
+    "module": "Selling",
+    "task_name": "Setting up customer master",
+    "task_reference": "- Customer Group \n - Customer",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-003",
+    "module": "Selling",
+    "task_name": "Creating items and setting item prices",
+    "task_reference": "- Item \n - Item Price \n - Price List \n - Item Group \n - Product Bundle \n - Pricing Rule \n - Promotional Scheme \n - Shipping Rule \n - Coupon Code",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-004",
+    "module": "Selling",
+    "task_name": "Creating sales orders",
+    "task_reference": "- Sales Order (Create and manage sales orders or stock, non-stock, or bundled items, apply taxes and pricing rules, update items, enable drop shipping and fetch items from quotations based on the customer.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-005",
+    "module": "Selling",
+    "task_name": "Creating delivery notes",
+    "task_reference": "- Delivery Note (Create and manage Delivery Notes from Sales Orders with taxes, partial deliveries, stock/accounting checks, product bundles, quality checks and sales returns.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-006",
+    "module": "Selling",
+    "task_name": "Creating sales invoices",
+    "task_reference": "- Sales Invoice (Create and manage Sales Invoices from Delivery Notes or Sales Orders with taxes, stock updates, accounting checks, credit notes, payment terms, multiple SIs, advances, and payment entries.) \n - Credit Note \n  - Debit Note",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-007",
+    "module": "Selling",
+    "task_name": "Setting up POS",
+    "task_reference": "- POS Settings \n - POS Profile \n - POS Opening Entry \n- POS Closing Entry \n - Loyalty Program \n - Loyalty Program Entry",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-008",
+    "module": "Selling",
+    "task_name": "Generating selling reports",
+    "task_reference": "Standard ERPNext selling reports provide insights into sales orders, invoices, quotations, delivery notes, customer transactions, sales trends, and salesperson performance.",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-009",
+    "module": "Selling",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-010",
+    "module": "Selling",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-011",
+    "module": "Selling",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-012",
+    "module": "Selling",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "SL-013",
+    "module": "Selling",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-001",
+    "module": "Project",
+    "task_name": "Setting up task management",
+    "task_reference": "- Project Type \n - Project Template \n - Task",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-002",
+    "module": "Project",
+    "task_name": "Monitoring projects",
+    "task_reference": "- Project \n - Project Update",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-003",
+    "module": "Project",
+    "task_name": "Tracking project costs",
+    "task_reference": "- Activity Type \n - Activity Cost",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-004",
+    "module": "Project",
+    "task_name": "Managing time tracking",
+    "task_reference": "- Timesheet",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-005",
+    "module": "Project",
+    "task_name": "Generating project reports",
+    "task_reference": "Standard ERPNext project reports providing insights into project progress, task completion, timesheets, billable hours, costing, billing, gross margin and overall project performance.",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-006",
+    "module": "Project",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-007",
+    "module": "Project",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-008",
+    "module": "Project",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-009",
+    "module": "Project",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PJ-010",
+    "module": "Project",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-001",
+    "module": "HRMS",
+    "task_name": "Managing employee records",
+    "task_reference": "- Employment Type \n - Branch \n - Department \n - Designation \n - Grade \n - Group \n - Health Insurance \n - Organisation Chart",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-002",
+    "module": "HRMS",
+    "task_name": "Managing attendance",
+    "task_reference": "- Attendance \n - Employee Attendance Tool \n - Attendance Request \n - Upload Attendance \n - Auto Attendance",
+    "default_configuration_effort": 2.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-003",
+    "module": "HRMS",
+    "task_name": "Managing leaves",
+    "task_reference": "- Leaves \n - Holiday List \n - Leave Block List \n - Leave Period \n - Leave Policy \n - Leave policy Assignment \n - Leave Allocation \n - Leave Control Panel \n - Leave Encashment \n - Compensatory Leave Request \n - Leave Ledger Entry",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-004",
+    "module": "HRMS",
+    "task_name": "Managing work shifts",
+    "task_reference": "- Shift Type \n - Shift Location \n - Shift Request \n - Shift Schedule \n - Shift Assignment \n - Shift Schedule Assignment \n - Shift Assignment Toll \n - Roster",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-005",
+    "module": "HRMS",
+    "task_name": "Setting up expense claim process",
+    "task_reference": "- Expense Claim \n - Employee Advance \n - Travel Request",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-006",
+    "module": "HRMS",
+    "task_name": "Managing fleet",
+    "task_reference": "- Vehicle \n - Vehicle Log",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-007",
+    "module": "HRMS",
+    "task_name": "Setting up recruitment process",
+    "task_reference": "- Staffing Plan \n - Job Requisition \n - Job Opening \n - Job Portal \n - Job Applicant \n - Interview Type \n  - Interview Round \n - Interview \n - Interview Feedback \n  - Job Offer \n  - Appointment Letter \n - Employee Referral",
+    "default_configuration_effort": 4.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-008",
+    "module": "HRMS",
+    "task_name": "Managing employee training",
+    "task_reference": "- Training Program \n - Training Event \n  - Training Result \n  - Training Feedback",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-009",
+    "module": "HRMS",
+    "task_name": "Managing employee lifecycle",
+    "task_reference": "- Employee Onboarding \n - Employee Promotion \n - Employee Transfer \n - Employee Separation \n - Exit Interview \n - F&F \n - Employee Skill Map",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-010",
+    "module": "HRMS",
+    "task_name": "Generating HRMS reports",
+    "task_reference": "Create HR reports provide insights into employee leave balances, salary registers, birthdays, work on holidays, and appraisals.",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-011",
+    "module": "HRMS",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-012",
+    "module": "HRMS",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-013",
+    "module": "HRMS",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-014",
+    "module": "HRMS",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "HR-015",
+    "module": "HRMS",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-001",
+    "module": "Payroll",
+    "task_name": "Creating salary components",
+    "task_reference": "- Payroll Period \n - Salary Component",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-002",
+    "module": "Payroll",
+    "task_name": "Defining tax slabs",
+    "task_reference": "- Income Tax Slab",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-003",
+    "module": "Payroll",
+    "task_name": "Creating salary structures",
+    "task_reference": "- Salary Structure",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-004",
+    "module": "Payroll",
+    "task_name": "Assigning salary structures to employees",
+    "task_reference": "- Salary Structure Assignment \n - Salary Structure Assignment Tool",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-005",
+    "module": "Payroll",
+    "task_name": "Managing employee tax exemption declarations",
+    "task_reference": "- Employee Tax Exemption Declaration \n - Employee Tax Exemption Proof \n Submission \n - Employee Other Income \n - Employee Benefit Application \n - Employee Benefit Claim",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-006",
+    "module": "Payroll",
+    "task_name": "Setting up gratuity",
+    "task_reference": "- Gratuity Rule \n - Gratuity",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-007",
+    "module": "Payroll",
+    "task_name": "Configuring Addons",
+    "task_reference": "- Incentives \n - Additional Salary \n  - Retention Bonus",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-008",
+    "module": "Payroll",
+    "task_name": "Configuring payroll processing",
+    "task_reference": "- Payroll Entry",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-009",
+    "module": "Payroll",
+    "task_name": "Generating payroll reports",
+    "task_reference": "Configure standard payroll reports providing insights into salary slips, payroll summaries, deductions, statutory compliance, payments and employee or department-wise payroll analytics",
+    "default_configuration_effort": 1.5,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-010",
+    "module": "Payroll",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-011",
+    "module": "Payroll",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-012",
+    "module": "Payroll",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-013",
+    "module": "Payroll",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "PY-014",
+    "module": "Payroll",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-001",
+    "module": "Stock",
+    "task_name": "Creating Item master",
+    "task_reference": "- Brand \n - Item Attribute \n - UOM \n - UOM Conversion Factor \n - Item Variant Settings \n - Item Variant \n - Item Group \n - Item \n - Manufacturer \n - Item Alternative",
+    "default_configuration_effort": 4.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-002",
+    "module": "Stock",
+    "task_name": "Creating price lists",
+    "task_reference": "- Item Price List",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-003",
+    "module": "Stock",
+    "task_name": "Setting item prices",
+    "task_reference": "- Item Price \n  - Price List \n - Item Group \n  - Promotional Scheme \n - Product Bundle",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-004",
+    "module": "Stock",
+    "task_name": "Creating warehouses",
+    "task_reference": "- Warehouse",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-005",
+    "module": "Stock",
+    "task_name": "Setting up serial and batch numbers",
+    "task_reference": "- Serial Number \n - Serial Number Naming \n - Serial and Batch Bundle \n - Managing Batch Wise Inventory",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-006",
+    "module": "Stock",
+    "task_name": "Creating stock entries",
+    "task_reference": "- Stock Entry",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-007",
+    "module": "Stock",
+    "task_name": "Managing stock movements",
+    "task_reference": "- Material Request \n - Opening Stock \n - Stock Entry \n - Delivery Note \n - Pick List \n - Purchase Receipt \n - Delivery Trip \n - Packing Slip \n - Putaway Rule \n - Stock Reservation",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-008",
+    "module": "Stock",
+    "task_name": "Performing stock reconciliation",
+    "task_reference": "- Stock Reconciliation Tool \n - Stock Reconciliation",
+    "default_configuration_effort":2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-009",
+    "module": "Stock",
+    "task_name": "Generating stock reports",
+    "task_reference": "Create reports to analyze inventory using ERPNext stock reports such as stock ledger, balances and projections, summaries, ageing, pricing, analytics, serial and batch tracking, order trends, shortages, reorder recommendations, and batch expiry status.",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-010",
+    "module": "Stock",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-011",
+    "module": "Stock",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-012",
+    "module": "Stock",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-013",
+    "module": "Stock",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "ST-014",
+    "module": "Stock",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-001",
+    "module": "Manufacturing",
+    "task_name": "Setting up warehouses",
+    "task_reference": "- Warehouse",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-002",
+    "module": "Manufacturing",
+    "task_name": "Setting up workstations",
+    "task_reference": "- Work Station",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-003",
+    "module": "Manufacturing",
+    "task_name": "Defining operations and routing",
+    "task_reference": "- Item Lead Time \n  - Downtime Entry \n - Operation \n - Routing",
+    "default_configuration_effort": 1.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-004",
+    "module": "Manufacturing",
+    "task_name": "Creating bills of materials (BOM)",
+    "task_reference": "- Bill of Material",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-005",
+    "module": "Manufacturing",
+    "task_name": "Creating work orders",
+    "task_reference": "- Work Order (Create a simple work order from a BOM without operations by transferring materials for manufacture, performing quality inspections if defined in the BOM, completing the manufacture stock entry, and conducting final quality inspections if required.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-006",
+    "module": "Manufacturing",
+    "task_name": "Creating work orders from BOM",
+    "task_reference": "- Work Order (Create a simple work order from a BOM with operations by transferring materials for manufacture, performing required quality inspections, creating or completing job cards for operations, completing the manufacture stock entry, and carrying out final quality inspections if specified.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-007",
+    "module": "Manufacturing",
+    "task_name": "Creating work orders with job cards",
+    "task_reference": "- Work Order (Create a work order with material transfer against job cards by assigning operations to raw materials, transferring materials for each operation, completing all job cards, and finally creating the manufacture stock entry.)",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-008",
+    "module": "Manufacturing",
+    "task_name": "Managing stock entries for production",
+    "task_reference": "- Stock Entry",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-009",
+    "module": "Manufacturing",
+    "task_name": "Creating production plans",
+    "task_reference": "- Forecasting \n - Master Production Schedule",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-010",
+    "module": "Manufacturing",
+    "task_name": "Managing subcontracting process",
+    "task_reference": "Manage sub-contracted production in ERPNext by selecting a multi-level BOM, enabling auto-BOM creation for sub-assemblies, setting up a sub-contractor warehouse, creating a purchase order, transferring raw materials to the sub-contractor, receiving the finished item via purchase receipt, and updating raw material stock accordingly.",
+    "default_configuration_effort": 6.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-011",
+    "module": "Manufacturing",
+    "task_name": "Generating manufacturing reports",
+    "task_reference": "Creating reports such as reports such as Production Planning, Work Order Summary, Quality Inspection Summary, Downtime Analysis, Job Card Summary, BOM Search, BOM Stock, BOM Operations Time, and Production Analytics.",
+    "default_configuration_effort": 4.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-012",
+    "module": "Manufacturing",
+    "task_name": "Customisations",
+    "task_reference": "- List of applicable customisations",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-013",
+    "module": "Manufacturing",
+    "task_name": "User Training",
+    "task_reference": "- User training activities",
+    "default_configuration_effort": 2.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-014",
+    "module": "Manufacturing",
+    "task_name": "UAT Assistance",
+    "task_reference": "- UAT support and addressing gaps",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-015",
+    "module": "Manufacturing",
+    "task_name": "Go Live Preparations",
+    "task_reference": "- Handholding to go-live",
+    "default_configuration_effort": 3.0,
+    "other_effort": 0.0
+  },
+  {
+    "doctype": "Task",
+    "name": "MF-016",
+    "module": "Manufacturing",
+    "task_name": "Hypercare Support",
+    "task_reference": "- Addressing concerns raised post go live",
+    "default_configuration_effort": 0.0,
+    "other_effort": 0.0
+  }
+]

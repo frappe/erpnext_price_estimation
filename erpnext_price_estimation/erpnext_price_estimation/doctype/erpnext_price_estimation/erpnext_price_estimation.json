@@ -6,17 +6,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "posting_date",
+  "company",
   "customer",
   "customer_name",
   "opportunity_from",
   "column_break_28_column",
-  "company",
+  "posting_date",
   "domain",
   "status",
   "party",
-  "introduction_section_section",
-  "introduction",
   "customer_details",
   "project_and_account_brief",
   "qualification_details_section",
@@ -48,22 +46,22 @@
   "asset_details",
   "buying_section",
   "buying_details",
-  "stock_section",
-  "stock_details",
   "crm_section",
   "crm_details",
-  "payroll_section",
-  "payroll_details",
-  "selling_section",
-  "selling_details",
   "hrms_section",
   "hrms_details",
-  "project_section",
-  "project_details",
   "manufacturing_section",
   "manufacturing_details",
+  "payroll_section",
+  "payroll_details",
+  "project_section",
+  "project_details",
+  "selling_section",
+  "selling_details",
   "setup_section",
   "setup_details",
+  "stock_section",
+  "stock_details",
   "custom_task_section",
   "custom_tasks_details",
   "total_hours_section",
@@ -89,9 +87,7 @@
   "amc_rate",
   "column_break_29",
   "amc_uom",
-  "amc_amount",
-  "thanks_section_section",
-  "thanks"
+  "amc_amount"
  ],
  "fields": [
   {
@@ -400,24 +396,6 @@
    "options": "Currency"
   },
   {
-   "fieldname": "introduction",
-   "fieldtype": "Text Editor",
-   "label": "Introduction Section"
-  },
-  {
-   "fieldname": "introduction_section_section",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "thanks_section_section",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "thanks",
-   "fieldtype": "Text Editor",
-   "label": "End Section"
-  },
-  {
    "fieldname": "accounts_details",
    "fieldtype": "Table",
    "label": "Estimation Details",
@@ -579,7 +557,7 @@
    "depends_on": "eval:doc.manufacturing",
    "fieldname": "manufacturing_section",
    "fieldtype": "Section Break",
-   "label": "Manufacturing Section"
+   "label": "Manufacturing"
   },
   {
    "fieldname": "custom_tasks_details",
@@ -589,7 +567,7 @@
   }
  ],
  "links": [],
- "modified": "2026-02-05 00:36:25.148959",
+ "modified": "2026-02-05 16:49:22.998999",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

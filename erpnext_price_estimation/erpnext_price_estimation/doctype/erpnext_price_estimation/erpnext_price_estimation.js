@@ -211,6 +211,7 @@ function add_efforts(frm, table, module) {
     callback: function (r) {
       $.each(r.message || [], function (i, row) {
         let entry = frappe.model.add_child(frm.doc, "Estimation Detail", table);
+        frappe.model.set_value(entry.doctype, entry.name, "task_id", row.name);
         frappe.model.set_value(
           entry.doctype,
           entry.name,

@@ -307,7 +307,8 @@
   {
    "fieldname": "total_hourly_rate",
    "fieldtype": "Float",
-   "label": "Total Hourly Rate"
+   "label": "Total Hourly Rate",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -567,7 +568,7 @@
   }
  ],
  "links": [],
- "modified": "2026-02-05 16:49:22.998999",
+ "modified": "2026-02-05 19:16:59.313903",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

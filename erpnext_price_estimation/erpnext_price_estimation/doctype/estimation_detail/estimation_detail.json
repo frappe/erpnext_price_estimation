@@ -15,15 +15,8 @@
  ],
  "fields": [
   {
-   "fieldname": "task_id",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Task ID",
-   "read_only": 1
-  },
-  {
    "fieldname": "task",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Task",
    "options": "Task",
@@ -59,12 +52,18 @@
    "label": "Task Reference",
    "options": "Estimation Document",
    "read_only": 1
+  },
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Link",
+   "label": "Task ID",
+   "options": "Task"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-03 23:56:17.959593",
+ "modified": "2026-02-05 19:11:02.851295",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Estimation Detail",

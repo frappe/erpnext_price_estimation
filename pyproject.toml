@@ -1,14 +1,15 @@
 [project]
 name = "erpnext_price_estimation"
 authors = [
-    { name = "frappe solutions", email = "poorvi@frappe.io"}
+    { name = "Frappe Technologies Pvt Ltd", email = "developers@frappe.io"}
 ]
-description = "ERPNext Price Estimation"
-requires-python = ">=3.10"
+description = "Price Estimation tool for ERPNext"
+requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
-    # "frappe~=15.0.0" # Installed and managed by bench.
+    # Managed by bench via tool.bench.frappe-dependencies
+    # "frappe~=16.0.0" # Installed and managed by bench.
 ]
 
 [build-system]
@@ -18,3 +19,6 @@ build-backend = "flit_core.buildapi"
 # These dependencies are only installed when developer mode is enabled
 [tool.bench.dev-dependencies]
 # package_name = "~=1.1.0"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=17.0.0-dev,<18.0.0"

@@ -1,6 +1,6 @@
 [
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-001",
     "module": "Setup",
     "task_name": "Setting up the staging site",
@@ -9,7 +9,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-002",
     "module": "Setup",
     "task_name": "Creating company structure",
@@ -18,7 +18,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-003",
     "module": "Setup",
     "task_name": "Creating roles and assigning permissions",
@@ -27,7 +27,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-004",
     "module": "Setup",
     "task_name": "Creating users and assigning access rights",
@@ -36,7 +36,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-005",
     "module": "Setup",
     "task_name": "Designing Letterheads",
@@ -45,7 +45,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-006",
     "module": "Setup",
     "task_name": "Designing Print Formats",
@@ -54,7 +54,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-007",
     "module": "Setup",
     "task_name": "Setting up approval workflows",
@@ -63,7 +63,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-008",
     "module": "Setup",
     "task_name": "Configuring system wide settings",
@@ -72,7 +72,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-009",
     "module": "Setup",
     "task_name": "Configuring module settings",
@@ -81,7 +81,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-010",
     "module": "Setup",
     "task_name": "Setting Up Module Dashboards",
@@ -90,7 +90,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-011",
     "module": "Setup",
     "task_name": "Customisations",
@@ -99,7 +99,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-012",
     "module": "Setup",
     "task_name": "User Training",
@@ -108,7 +108,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-013",
     "module": "Setup",
     "task_name": "UAT Assistance",
@@ -117,7 +117,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-014",
     "module": "Setup",
     "task_name": "Go Live Preparations",
@@ -126,7 +126,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SU-015",
     "module": "Setup",
     "task_name": "Hypercare Support",
@@ -135,7 +135,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-001",
     "module": "Accounts",
     "task_name": "Creating the Chart of Accounts",
@@ -144,7 +144,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-002",
     "module": "Accounts",
     "task_name": "Setting up master data",
@@ -153,7 +153,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-003",
     "module": "Accounts",
     "task_name": "Creating cost centres",
@@ -162,7 +162,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-004",
     "module": "Accounts",
     "task_name": "Creating accounting dimensions",
@@ -171,7 +171,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-005",
     "module": "Accounts",
     "task_name": "Setting up budgets and allocations",
@@ -180,7 +180,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-006",
     "module": "Accounts",
     "task_name": "Configuring taxes",
@@ -189,7 +189,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-007",
     "module": "Accounts",
     "task_name": "Entering opening account balances",
@@ -198,7 +198,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-008",
     "module": "Accounts",
     "task_name": "Setting up payment basics",
@@ -207,7 +207,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-009",
     "module": "Accounts",
     "task_name": "Setting up multi-currency",
@@ -216,7 +216,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-010",
     "module": "Accounts",
     "task_name": "Configuring bank accounts and banking essential",
@@ -225,7 +225,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-011",
     "module": "Accounts",
     "task_name": "Setting up subscriptions",
@@ -234,7 +234,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-012",
     "module": "Accounts",
     "task_name": "Setting up share management",
@@ -243,7 +243,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-013",
     "module": "Accounts",
     "task_name": "Generating accounting reports",
@@ -252,7 +252,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-014",
     "module": "Accounts",
     "task_name": "Customisations",
@@ -261,7 +261,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-015",
     "module": "Accounts",
     "task_name": "User Training",
@@ -270,7 +270,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-016",
     "module": "Accounts",
     "task_name": "UAT Assistance",
@@ -279,7 +279,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-017",
     "module": "Accounts",
     "task_name": "Go Live Preparations",
@@ -288,7 +288,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AC-018",
     "module": "Accounts",
     "task_name": "Hypercare Support",
@@ -297,7 +297,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-001",
     "module": "Asset",
     "task_name": "Setup Asset Masters", 
@@ -306,7 +306,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-002",
     "module": "Asset",
     "task_name": "Asset Maintenance", 
@@ -315,7 +315,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-003",
     "module": "Asset",
     "task_name": "Asset Transactions", 
@@ -324,7 +324,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-004",
     "module": "Asset",
     "task_name": "Discarding Assets", 
@@ -333,7 +333,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-005",
     "module": "Asset",
     "task_name": "Assets Reports", 
@@ -342,7 +342,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-006",
     "module": "Asset",
     "task_name": "Customisations",
@@ -351,7 +351,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-007",
     "module": "Asset",
     "task_name": "User Training",
@@ -360,7 +360,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-008",
     "module": "Asset",
     "task_name": "UAT Assistance",
@@ -369,7 +369,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-009",
     "module": "Asset",
     "task_name": "Go Live Preparations",
@@ -378,7 +378,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "AS-010",
     "module": "Asset",
     "task_name": "Hypercare Support",
@@ -387,7 +387,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-001",
     "module": "Buying",
     "task_name": "Setting up supplier master",
@@ -396,7 +396,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-002",
     "module": "Buying",
     "task_name": "Creating items and setting item prices",
@@ -405,7 +405,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-003",
     "module": "Buying",
     "task_name": "Setting up supplier scorecard",
@@ -414,7 +414,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-004",
     "module": "Buying",
     "task_name": "Setting up material request process",
@@ -423,7 +423,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-005",
     "module": "Buying",
     "task_name": "Setting up RFQ process",
@@ -432,7 +432,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-006",
     "module": "Buying",
     "task_name": "Recording supplier quotations",
@@ -441,7 +441,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-007",
     "module": "Buying",
     "task_name": "Creating purchase orders",
@@ -450,7 +450,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-008",
     "module": "Buying",
     "task_name": "Creating purchase receipts",
@@ -459,7 +459,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-009",
     "module": "Buying",
     "task_name": "Creating purchase invoices",
@@ -468,7 +468,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-010",
     "module": "Buying",
     "task_name": "Generating purchase reports",
@@ -477,7 +477,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-011",
     "module": "Buying",
     "task_name": "Customisations",
@@ -486,7 +486,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-012",
     "module": "Buying",
     "task_name": "User Training",
@@ -495,7 +495,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-013",
     "module": "Buying",
     "task_name": "UAT Assistance",
@@ -504,7 +504,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-014",
     "module": "Buying",
     "task_name": "Go Live Preparations",
@@ -513,7 +513,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "BY-015",
     "module": "Buying",
     "task_name": "Hypercare Support",
@@ -522,7 +522,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-001",
     "module": "CRM",
     "task_name": "CRM Masters",
@@ -531,7 +531,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-002",
     "module": "CRM",
     "task_name": "Lead Creation Flow",
@@ -540,7 +540,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-003",
     "module": "CRM",
     "task_name": "Conversion to Opportunities",
@@ -549,7 +549,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-004",
     "module": "CRM",
     "task_name": "Generation of Quotations",
@@ -558,7 +558,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-005",
     "module": "CRM",
     "task_name": "Setup Campaigns",
@@ -567,7 +567,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-006",
     "module": "CRM",
     "task_name": "CRM Reports",
@@ -576,7 +576,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-007",
     "module": "CRM",
     "task_name": "Customisations",
@@ -585,7 +585,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-008",
     "module": "CRM",
     "task_name": "User Training",
@@ -594,7 +594,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-009",
     "module": "CRM",
     "task_name": "UAT Assistance",
@@ -603,7 +603,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-010",
     "module": "CRM",
     "task_name": "Go Live Preparations",
@@ -612,7 +612,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "CM-011",
     "module": "CRM",
     "task_name": "Hypercare Support",
@@ -621,7 +621,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-001",
     "module": "Selling",
     "task_name": "Setting up selling essentials",
@@ -630,7 +630,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-002",
     "module": "Selling",
     "task_name": "Setting up customer master",
@@ -639,7 +639,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-003",
     "module": "Selling",
     "task_name": "Creating items and setting item prices",
@@ -648,7 +648,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-004",
     "module": "Selling",
     "task_name": "Creating sales orders",
@@ -657,7 +657,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-005",
     "module": "Selling",
     "task_name": "Creating delivery notes",
@@ -666,7 +666,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-006",
     "module": "Selling",
     "task_name": "Creating sales invoices",
@@ -675,7 +675,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-007",
     "module": "Selling",
     "task_name": "Setting up POS",
@@ -684,7 +684,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-008",
     "module": "Selling",
     "task_name": "Generating selling reports",
@@ -693,7 +693,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-009",
     "module": "Selling",
     "task_name": "Customisations",
@@ -702,7 +702,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-010",
     "module": "Selling",
     "task_name": "User Training",
@@ -711,7 +711,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-011",
     "module": "Selling",
     "task_name": "UAT Assistance",
@@ -720,7 +720,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-012",
     "module": "Selling",
     "task_name": "Go Live Preparations",
@@ -729,7 +729,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "SL-013",
     "module": "Selling",
     "task_name": "Hypercare Support",
@@ -738,7 +738,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-001",
     "module": "Project",
     "task_name": "Setting up task management",
@@ -747,7 +747,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-002",
     "module": "Project",
     "task_name": "Monitoring projects",
@@ -756,7 +756,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-003",
     "module": "Project",
     "task_name": "Tracking project costs",
@@ -765,7 +765,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-004",
     "module": "Project",
     "task_name": "Managing time tracking",
@@ -774,7 +774,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-005",
     "module": "Project",
     "task_name": "Generating project reports",
@@ -783,7 +783,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-006",
     "module": "Project",
     "task_name": "Customisations",
@@ -792,7 +792,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-007",
     "module": "Project",
     "task_name": "User Training",
@@ -801,7 +801,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-008",
     "module": "Project",
     "task_name": "UAT Assistance",
@@ -810,7 +810,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-009",
     "module": "Project",
     "task_name": "Go Live Preparations",
@@ -819,7 +819,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PJ-010",
     "module": "Project",
     "task_name": "Hypercare Support",
@@ -828,7 +828,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-001",
     "module": "HRMS",
     "task_name": "Managing employee records",
@@ -837,7 +837,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-002",
     "module": "HRMS",
     "task_name": "Managing attendance",
@@ -846,7 +846,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-003",
     "module": "HRMS",
     "task_name": "Managing leaves",
@@ -855,7 +855,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-004",
     "module": "HRMS",
     "task_name": "Managing work shifts",
@@ -864,7 +864,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-005",
     "module": "HRMS",
     "task_name": "Setting up expense claim process",
@@ -873,7 +873,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-006",
     "module": "HRMS",
     "task_name": "Managing fleet",
@@ -882,7 +882,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-007",
     "module": "HRMS",
     "task_name": "Setting up recruitment process",
@@ -891,7 +891,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-008",
     "module": "HRMS",
     "task_name": "Managing employee training",
@@ -900,7 +900,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-009",
     "module": "HRMS",
     "task_name": "Managing employee lifecycle",
@@ -909,7 +909,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-010",
     "module": "HRMS",
     "task_name": "Generating HRMS reports",
@@ -918,7 +918,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-011",
     "module": "HRMS",
     "task_name": "Customisations",
@@ -927,7 +927,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-012",
     "module": "HRMS",
     "task_name": "User Training",
@@ -936,7 +936,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-013",
     "module": "HRMS",
     "task_name": "UAT Assistance",
@@ -945,7 +945,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-014",
     "module": "HRMS",
     "task_name": "Go Live Preparations",
@@ -954,7 +954,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "HR-015",
     "module": "HRMS",
     "task_name": "Hypercare Support",
@@ -963,7 +963,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-001",
     "module": "Payroll",
     "task_name": "Creating salary components",
@@ -972,7 +972,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-002",
     "module": "Payroll",
     "task_name": "Defining tax slabs",
@@ -981,7 +981,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-003",
     "module": "Payroll",
     "task_name": "Creating salary structures",
@@ -990,7 +990,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-004",
     "module": "Payroll",
     "task_name": "Assigning salary structures to employees",
@@ -999,7 +999,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-005",
     "module": "Payroll",
     "task_name": "Managing employee tax exemption declarations",
@@ -1008,7 +1008,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-006",
     "module": "Payroll",
     "task_name": "Setting up gratuity",
@@ -1017,7 +1017,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-007",
     "module": "Payroll",
     "task_name": "Configuring Addons",
@@ -1026,7 +1026,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-008",
     "module": "Payroll",
     "task_name": "Configuring payroll processing",
@@ -1035,7 +1035,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-009",
     "module": "Payroll",
     "task_name": "Generating payroll reports",
@@ -1044,7 +1044,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-010",
     "module": "Payroll",
     "task_name": "Customisations",
@@ -1053,7 +1053,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-011",
     "module": "Payroll",
     "task_name": "User Training",
@@ -1062,7 +1062,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-012",
     "module": "Payroll",
     "task_name": "UAT Assistance",
@@ -1071,7 +1071,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-013",
     "module": "Payroll",
     "task_name": "Go Live Preparations",
@@ -1080,7 +1080,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "PY-014",
     "module": "Payroll",
     "task_name": "Hypercare Support",
@@ -1089,7 +1089,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-001",
     "module": "Stock",
     "task_name": "Creating Item master",
@@ -1098,7 +1098,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-002",
     "module": "Stock",
     "task_name": "Creating price lists",
@@ -1107,7 +1107,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-003",
     "module": "Stock",
     "task_name": "Setting item prices",
@@ -1116,7 +1116,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-004",
     "module": "Stock",
     "task_name": "Creating warehouses",
@@ -1125,7 +1125,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-005",
     "module": "Stock",
     "task_name": "Setting up serial and batch numbers",
@@ -1134,7 +1134,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-006",
     "module": "Stock",
     "task_name": "Creating stock entries",
@@ -1143,7 +1143,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-007",
     "module": "Stock",
     "task_name": "Managing stock movements",
@@ -1152,7 +1152,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-008",
     "module": "Stock",
     "task_name": "Performing stock reconciliation",
@@ -1161,7 +1161,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-009",
     "module": "Stock",
     "task_name": "Generating stock reports",
@@ -1170,7 +1170,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-010",
     "module": "Stock",
     "task_name": "Customisations",
@@ -1179,7 +1179,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-011",
     "module": "Stock",
     "task_name": "User Training",
@@ -1188,7 +1188,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-012",
     "module": "Stock",
     "task_name": "UAT Assistance",
@@ -1197,7 +1197,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-013",
     "module": "Stock",
     "task_name": "Go Live Preparations",
@@ -1206,7 +1206,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "ST-014",
     "module": "Stock",
     "task_name": "Hypercare Support",
@@ -1215,7 +1215,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-001",
     "module": "Manufacturing",
     "task_name": "Setting up warehouses",
@@ -1224,7 +1224,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-002",
     "module": "Manufacturing",
     "task_name": "Setting up workstations",
@@ -1233,7 +1233,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-003",
     "module": "Manufacturing",
     "task_name": "Defining operations and routing",
@@ -1242,7 +1242,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-004",
     "module": "Manufacturing",
     "task_name": "Creating bills of materials (BOM)",
@@ -1251,7 +1251,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-005",
     "module": "Manufacturing",
     "task_name": "Creating work orders",
@@ -1260,7 +1260,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-006",
     "module": "Manufacturing",
     "task_name": "Creating work orders from BOM",
@@ -1269,7 +1269,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-007",
     "module": "Manufacturing",
     "task_name": "Creating work orders with job cards",
@@ -1278,7 +1278,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-008",
     "module": "Manufacturing",
     "task_name": "Managing stock entries for production",
@@ -1287,7 +1287,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-009",
     "module": "Manufacturing",
     "task_name": "Creating production plans",
@@ -1296,7 +1296,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-010",
     "module": "Manufacturing",
     "task_name": "Managing subcontracting process",
@@ -1305,7 +1305,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-011",
     "module": "Manufacturing",
     "task_name": "Generating manufacturing reports",
@@ -1314,7 +1314,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-012",
     "module": "Manufacturing",
     "task_name": "Customisations",
@@ -1323,7 +1323,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-013",
     "module": "Manufacturing",
     "task_name": "User Training",
@@ -1332,7 +1332,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-014",
     "module": "Manufacturing",
     "task_name": "UAT Assistance",
@@ -1341,7 +1341,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-015",
     "module": "Manufacturing",
     "task_name": "Go Live Preparations",
@@ -1350,7 +1350,7 @@
     "other_effort": 0.0
   },
   {
-    "doctype": "Task",
+    "doctype": "Estimation Task",
     "name": "MF-016",
     "module": "Manufacturing",
     "task_name": "Hypercare Support",

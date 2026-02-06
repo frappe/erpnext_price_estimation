@@ -61,7 +61,7 @@ def get_task_documents(process=None, module=None):
         filters["module"] = module
 
     task_details = frappe.get_all(
-        "Task",
+        "Estimation Task",
         fields=[
             "name",
             "task_name",

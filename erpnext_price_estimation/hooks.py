@@ -5,4 +5,4 @@ app_description = "ERPNext Price Estimation"
 app_email = "poorvi@frappe.io"
 app_license = "mit"
 
-fixtures = ["Module", "Task"]
+fixtures = ["Module", "Estimation Task"]

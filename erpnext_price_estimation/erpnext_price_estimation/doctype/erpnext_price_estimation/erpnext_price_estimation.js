@@ -34,107 +34,46 @@ frappe.ui.form.on("ERPNext Price Estimation", {
 
 frappe.ui.form.on("ERPNext Price Estimation", {
   accounts: function (frm) {
-    if (frm.doc.accounts) {
-      add_efforts(frm, "accounts_details", "Accounts");
-    } else {
-      frm.clear_table("accounts_details");
-      frm.refresh_field("accounts_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "accounts_details", "Accounts", frm.doc.accounts);
   },
   asset: function (frm) {
-    if (frm.doc.asset) {
-      add_efforts(frm, "asset_details", "Asset");
-    } else {
-      frm.clear_table("asset_details");
-      frm.refresh_field("asset_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "asset_details", "Asset", frm.doc.asset);
   },
   buying: function (frm) {
-    if (frm.doc.buying) {
-      add_efforts(frm, "buying_details", "Buying");
-    } else {
-      frm.clear_table("buying_details");
-      frm.refresh_field("buying_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "buying_details", "Buying", frm.doc.buying);
   },
   stock: function (frm) {
-    if (frm.doc.stock) {
-      add_efforts(frm, "stock_details", "Stock");
-    } else {
-      frm.clear_table("stock_details");
-      frm.refresh_field("stock_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "stock_details", "Stock", frm.doc.stock);
   },
   crm: function (frm) {
-    if (frm.doc.crm) {
-      add_efforts(frm, "crm_details", "CRM");
-    } else {
-      frm.clear_table("crm_details");
-      frm.refresh_field("crm_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "crm_details", "CRM", frm.doc.crm);
   },
   payroll: function (frm) {
-    if (frm.doc.payroll) {
-      add_efforts(frm, "payroll_details", "Payroll");
-    } else {
-      frm.clear_table("payroll_details");
-      frm.refresh_field("payroll_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "payroll_details", "Payroll", frm.doc.payroll);
   },
   selling: function (frm) {
-    if (frm.doc.selling) {
-      add_efforts(frm, "selling_details", "Selling");
-    } else {
-      frm.clear_table("selling_details");
-      frm.refresh_field("selling_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "selling_details", "Selling", frm.doc.selling);
   },
   hrms: function (frm) {
-    if (frm.doc.hrms) {
-      add_efforts(frm, "hrms_details", "HRMS");
-    } else {
-      frm.clear_table("hrms_details");
-      frm.refresh_field("hrms_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "hrms_details", "HRMS", frm.doc.hrms);
   },
   project: function (frm) {
-    if (frm.doc.project) {
-      add_efforts(frm, "project_details", "Project");
-    } else {
-      frm.clear_table("project_details");
-      frm.refresh_field("project_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "project_details", "Project", frm.doc.project);
   },
   manufacturing: function (frm) {
-    if (frm.doc.manufacturing) {
-      add_efforts(frm, "manufacturing_details", "Manufacturing");
-    } else {
-      frm.clear_table("manufacturing_details");
-      frm.refresh_field("manufacturing_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(
+      frm,
+      "manufacturing_details",
+      "Manufacturing",
+      frm.doc.manufacturing
+    );
   },
   setup: function (frm) {
-    if (frm.doc.setup) {
-      add_efforts(frm, "setup_details", "Setup");
-    } else {
-      frm.clear_table("setup_details");
-      frm.refresh_field("setup_details");
-      calculate_total_efforts(frm);
-    }
+    toggle_table_details(frm, "setup_details", "Setup", frm.doc.setup);
   },
-  custom_task: function (frm) {
-    calculate_total_efforts(frm);
-    if (!frm.doc.custom_task) {
+  custom_tasks: function (frm) {
+    if (frm.doc.custom_tasks) calculate_total_efforts(frm);
+    else {
       frm.clear_table("custom_tasks_details");
       frm.refresh_field("custom_tasks_details");
       calculate_total_efforts(frm);
@@ -240,6 +179,16 @@ function add_efforts(frm, table, module) {
       frm.refresh_field(table);
     },
   });
+}
+
+function toggle_table_details(frm, table, module, flag) {
+  if (flag) {
+    add_efforts(frm, table, module);
+  } else {
+    frm.clear_table(table);
+    frm.refresh_field(table);
+  }
+  calculate_total_efforts(frm);
 }
 
 function calculate_total_efforts(frm) {

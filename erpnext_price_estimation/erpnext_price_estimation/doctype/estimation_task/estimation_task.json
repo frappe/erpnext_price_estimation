@@ -16,11 +16,14 @@
   {
    "fieldname": "task_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Task Name"
   },
   {
    "fieldname": "module",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Module",
    "options": "Module"
   },
@@ -47,7 +50,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-12 20:39:02.571880",
+ "modified": "2026-02-26 17:31:32.838789",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Estimation Task",
@@ -59,7 +62,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "All",
    "share": 1
   }
  ],

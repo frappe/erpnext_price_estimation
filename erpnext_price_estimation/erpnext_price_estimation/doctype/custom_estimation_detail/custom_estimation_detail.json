@@ -10,9 +10,7 @@
   "task",
   "task_reference",
   "column_break_rvvb",
-  "default_configuration_effort",
-  "other_effort",
-  "applicability"
+  "default_configuration_effort"
  ],
  "fields": [
   {
@@ -27,27 +25,12 @@
    "fieldname": "default_configuration_effort",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Default Configuration Effort",
+   "label": "Overall Effort",
    "reqd": 1
   },
   {
    "fieldname": "column_break_rvvb",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "other_effort",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Other Effort",
-   "reqd": 1
-  },
-  {
-   "fieldname": "applicability",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Applicability",
-   "options": "Applicable\nNot Applicable",
-   "reqd": 1
   },
   {
    "fieldname": "task_reference",
@@ -61,7 +44,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-12 13:31:56.732614",
+ "modified": "2026-02-26 17:11:27.429944",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Custom Estimation Detail",

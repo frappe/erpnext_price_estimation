@@ -14,12 +14,13 @@
    "fieldname": "module_name",
    "fieldtype": "Data",
    "label": "Module Name",
+   "read_only": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-03 23:55:23.262265",
+ "modified": "2026-03-07 22:12:09.247415",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Module",

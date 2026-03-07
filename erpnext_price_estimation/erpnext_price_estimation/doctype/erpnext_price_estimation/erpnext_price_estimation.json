@@ -87,7 +87,8 @@
   "amc_rate",
   "column_break_29",
   "amc_uom",
-  "amc_amount"
+  "amc_amount",
+  "amended_from"
  ],
  "fields": [
   {
@@ -565,10 +566,20 @@
    "fieldtype": "Table",
    "label": "Estimation Details",
    "options": "Custom Estimation Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ERPNext Price Estimation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "links": [],
- "modified": "2026-02-05 19:16:59.313903",
+ "modified": "2026-03-07 22:31:24.094163",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

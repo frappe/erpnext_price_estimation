@@ -10,7 +10,9 @@
   "task",
   "task_reference",
   "column_break_rvvb",
-  "default_configuration_effort"
+  "default_configuration_effort",
+  "other_effort",
+  "applicability"
  ],
  "fields": [
   {
@@ -38,13 +40,27 @@
    "in_list_view": 1,
    "label": "Task Reference",
    "reqd": 1
+  },
+  {
+   "fieldname": "applicability",
+   "fieldtype": "Select",
+   "label": "Applicability",
+   "options": "Applicable",
+   "read_only": 1
+  },
+  {
+   "default": "0.0",
+   "fieldname": "other_effort",
+   "fieldtype": "Float",
+   "label": "Other Effort",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-26 17:11:27.429944",
+ "modified": "2026-03-07 22:04:33.933736",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Custom Estimation Detail",

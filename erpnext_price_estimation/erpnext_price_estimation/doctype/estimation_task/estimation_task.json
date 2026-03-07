@@ -17,7 +17,8 @@
    "fieldname": "task_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Task Name"
+   "label": "Task Name",
+   "read_only": 1
   },
   {
    "fieldname": "module",
@@ -25,7 +26,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Module",
-   "options": "Module"
+   "options": "Module",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_guuv",
@@ -34,23 +36,26 @@
   {
    "fieldname": "task_reference",
    "fieldtype": "Long Text",
-   "label": "Task Reference"
+   "label": "Task Reference",
+   "read_only": 1
   },
   {
    "fieldname": "default_configuration_effort",
    "fieldtype": "Float",
-   "label": "Default Configuration Effort"
+   "label": "Default Configuration Effort",
+   "read_only": 1
   },
   {
    "fieldname": "other_effort",
    "fieldtype": "Float",
-   "label": "Other Effort"
+   "label": "Other Effort",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-26 17:31:32.838789",
+ "modified": "2026-03-07 22:11:31.158614",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "Estimation Task",
@@ -62,7 +67,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "All",
+   "role": "System Manager",
    "share": 1
   }
  ],

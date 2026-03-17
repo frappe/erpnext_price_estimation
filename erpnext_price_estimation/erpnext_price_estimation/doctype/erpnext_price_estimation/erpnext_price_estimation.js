@@ -138,7 +138,7 @@ frappe.ui.form.on("Custom Estimation Detail", {
   },
 });
 
-function add_efforts(frm, table, module) {
+function populate_estimation_detail_tables(frm, table, module) {
   frappe.call({
     method:
       "erpnext_price_estimation.erpnext_price_estimation.doctype.erpnext_price_estimation.erpnext_price_estimation.get_task_documents",
@@ -183,7 +183,7 @@ function add_efforts(frm, table, module) {
 
 function toggle_table_details(frm, table, module, flag) {
   if (flag) {
-    add_efforts(frm, table, module);
+    populate_estimation_detail_tables(frm, table, module);
   } else {
     frm.clear_table(table);
     frm.refresh_field(table);
@@ -199,6 +199,22 @@ function calculate_total_efforts(frm) {
   (task_modules || []).forEach((task_module) => {
     (frm.doc[task_module] || []).forEach((row) => {
       if (row.applicability == "Applicable") {
+        if ((row.default_configuration_effort * 10) % 5 !== 0) {
+          if (task_module === "custom_tasks_details") {
+            frappe.throw(
+              `${task_module} Row ${row.idx}: overall effort must be in multiples of 0.5`
+            );
+          } else {
+            frappe.throw(
+              `${task_module} Row ${row.idx}: default configuration effort must be in multiples of 0.5`
+            );
+          }
+        }
+        if ((row.other_effort * 10) % 5 !== 0) {
+          frappe.throw(
+            `${task_module} Row ${row.idx}: other effort must be in multiples of 0.5`
+          );
+        }
         frm.doc.total_config_effort += flt(row.default_configuration_effort);
         frm.doc.total_other_effort += flt(row.other_effort);
       }

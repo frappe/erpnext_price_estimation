@@ -31,11 +31,34 @@ class ERPNextPriceEstimation(Document):
             "custom_tasks_details",
         ]
 
+        errors = []
+
         for task_module in task_modules:
             for row in self.get(task_module, []):
                 if row.applicability == "Applicable":
-                    total_config_effort += row.default_configuration_effort or 0
-                    total_other_effort += row.other_effort or 0
+                    config = row.default_configuration_effort or 0
+                    other = row.other_effort or 0
+
+                    if (config * 10) % 5 != 0:
+                        if task_module == "custom_tasks_details":
+                            errors.append(
+                                f"{task_module} Row {row.idx}: overall effort must be in multiples of 0.5"
+                            )
+                        else:
+                            errors.append(
+                                f"{task_module} Row {row.idx}: default configuration effort must be in multiples of 0.5"
+                            )
+
+                    if (other * 10) % 5 != 0:
+                        errors.append(
+                            f"{task_module} Row {row.idx}: other effort must be in multiples of 0.5"
+                        )
+
+                    total_config_effort += config
+                    total_other_effort += other
+
+        if errors:
+            frappe.throw("<br>".join(errors))
 
         self.total_config_effort = total_config_effort
         self.total_other_effort = total_other_effort

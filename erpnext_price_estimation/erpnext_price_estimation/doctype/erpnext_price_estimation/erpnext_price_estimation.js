@@ -30,7 +30,39 @@ frappe.ui.form.on("ERPNext Price Estimation", {
       }
     });
   },
+
+  party: function (frm) {
+    set_party_name(frm);
+  },
+
+  opportunity_from: function (frm) {
+    frm.set_value("party", null);
+    frm.set_value("party_name", null);
+  },
 });
+
+function set_party_name(frm) {
+  if (!frm.doc.party || !frm.doc.opportunity_from) return;
+
+  const field_map = {
+    Customer: "customer_name",
+    Lead: "lead_name",
+    Prospect: "company_name",
+  };
+
+  let field = field_map[frm.doc.opportunity_from];
+  if (!field) return;
+
+  frappe.db
+    .get_value(frm.doc.opportunity_from, frm.doc.party, field)
+    .then((r) => {
+      if (r.message) {
+        frm.set_value("party_name", r.message[field]);
+      } else {
+        frm.set_value("party_name", null);
+      }
+    });
+}
 
 frappe.ui.form.on("ERPNext Price Estimation", {
   accounts: function (frm) {

@@ -7,14 +7,13 @@
  "engine": "InnoDB",
  "field_order": [
   "company",
-  "customer",
-  "customer_name",
   "opportunity_from",
+  "party",
+  "party_name",
   "column_break_28_column",
   "posting_date",
   "domain",
   "status",
-  "party",
   "customer_details",
   "project_and_account_brief",
   "qualification_details_section",
@@ -293,19 +292,6 @@
    "read_only": 1
   },
   {
-   "fetch_from": "partner_lead.lead_name",
-   "fieldname": "customer",
-   "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer"
-  },
-  {
-   "fetch_from": "customer.customer_name",
-   "fieldname": "customer_name",
-   "fieldtype": "Data",
-   "label": "Customer Name"
-  },
-  {
    "fieldname": "total_hourly_rate",
    "fieldtype": "Float",
    "label": "Total Hourly Rate",
@@ -461,13 +447,15 @@
    "fieldname": "opportunity_from",
    "fieldtype": "Link",
    "label": "Opportunity From",
-   "options": "DocType"
+   "options": "DocType",
+   "reqd": 1
   },
   {
    "fieldname": "party",
    "fieldtype": "Dynamic Link",
    "label": "Party",
-   "options": "opportunity_from"
+   "options": "opportunity_from",
+   "reqd": 1
   },
   {
    "fieldname": "cloud_validity",
@@ -576,10 +564,17 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2026-03-07 22:31:24.094163",
+ "modified": "2026-04-13 23:08:29.341977",
  "modified_by": "Administrator",
  "module": "ERPNext Price Estimation",
  "name": "ERPNext Price Estimation",

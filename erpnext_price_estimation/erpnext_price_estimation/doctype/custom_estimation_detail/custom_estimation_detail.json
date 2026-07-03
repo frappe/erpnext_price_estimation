@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:task",
  "creation": "2026-02-02 16:01:08.215865",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -20,8 +19,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Task",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "default_configuration_effort",

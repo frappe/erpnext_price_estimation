@@ -2,15 +2,41 @@
 # For license information, please see license.txt
 
 import frappe
+from frappe import _
 from frappe.model.document import Document
+
+# ERPNext and Frappe CRM party doctypes; whichever are installed are valid
+PARTY_DOCTYPES = ["Customer", "Lead", "Prospect", "CRM Lead", "CRM Deal"]
 
 
 class ERPNextPriceEstimation(Document):
     def validate(self):
+        self.validate_company()
+        self.validate_party()
         self.validate_total_efforts()
         self.validate_total_amount()
         self.validate_cloud_amount()
         self.validate_amc_amount()
+
+    def validate_company(self):
+        if self.company and not frappe.db.exists("DocType", "Company"):
+            frappe.throw(_("Company is not available on this site"))
+
+    def validate_party(self):
+        if not self.opportunity_from:
+            return
+
+        if self.opportunity_from not in PARTY_DOCTYPES:
+            frappe.throw(
+                _("Opportunity From must be one of {0}").format(
+                    ", ".join(PARTY_DOCTYPES)
+                )
+            )
+
+        if not frappe.db.exists("DocType", self.opportunity_from):
+            frappe.throw(
+                _("{0} is not available on this site").format(self.opportunity_from)
+            )
 
     def validate_total_efforts(self):
         total_config_effort = 0
@@ -78,6 +104,8 @@ class ERPNextPriceEstimation(Document):
 
 @frappe.whitelist()
 def get_task_documents(process=None, module=None):
+    frappe.has_permission("Estimation Task", "read", throw=True)
+
     filters = {}
 
     if module:

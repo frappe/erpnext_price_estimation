@@ -15,12 +15,23 @@ const task_modules = [
 
 frappe.ui.form.on("ERPNext Price Estimation", {
   onload: function (frm) {
+    // Both ERPNext and Frappe CRM party doctypes; the picker only lists
+    // those installed on the site, so this stays app-agnostic.
     frm.set_query("opportunity_from", function () {
       return {
         filters: {
-          name: ["in", ["Customer", "Lead", "Prospect"]],
+          name: [
+            "in",
+            ["Customer", "Lead", "Prospect", "CRM Lead", "CRM Deal"],
+          ],
         },
       };
+    });
+
+    // Company is ERPNext-only; hide + lock it on CRM-only sites.
+    frappe.db.exists("DocType", "Company").then((exists) => {
+      frm.set_df_property("company", "hidden", exists ? 0 : 1);
+      frm.set_df_property("company", "read_only", exists ? 0 : 1);
     });
 
     (task_modules || []).forEach((task_module) => {
@@ -48,6 +59,8 @@ function set_party_name(frm) {
     Customer: "customer_name",
     Lead: "lead_name",
     Prospect: "company_name",
+    "CRM Lead": "lead_name",
+    "CRM Deal": "organization",
   };
 
   let field = field_map[frm.doc.opportunity_from];
@@ -97,7 +110,7 @@ frappe.ui.form.on("ERPNext Price Estimation", {
       frm,
       "manufacturing_details",
       "Manufacturing",
-      frm.doc.manufacturing
+      frm.doc.manufacturing,
     );
   },
   setup: function (frm) {
@@ -187,25 +200,25 @@ function populate_estimation_detail_tables(frm, table, module) {
           entry.doctype,
           entry.name,
           "task",
-          row.task_name
+          row.task_name,
         );
         frappe.model.set_value(
           entry.doctype,
           entry.name,
           "task_reference",
-          row.task_reference
+          row.task_reference,
         );
         frappe.model.set_value(
           entry.doctype,
           entry.name,
           "default_configuration_effort",
-          row.default_configuration_effort
+          row.default_configuration_effort,
         );
         frappe.model.set_value(
           entry.doctype,
           entry.name,
           "other_effort",
-          row.other_effort
+          row.other_effort,
         );
       });
       frm.refresh_field(table);
@@ -231,20 +244,20 @@ function calculate_total_efforts(frm) {
   (task_modules || []).forEach((task_module) => {
     (frm.doc[task_module] || []).forEach((row) => {
       if (row.applicability == "Applicable") {
-        if ((row.default_configuration_effort * 10) % 5 !== 0) {
+        if ((flt(row.default_configuration_effort) * 10) % 5 !== 0) {
           if (task_module === "custom_tasks_details") {
             frappe.throw(
-              `${task_module} Row ${row.idx}: overall effort must be in multiples of 0.5`
+              `${task_module} Row ${row.idx}: overall effort must be in multiples of 0.5`,
             );
           } else {
             frappe.throw(
-              `${task_module} Row ${row.idx}: default configuration effort must be in multiples of 0.5`
+              `${task_module} Row ${row.idx}: default configuration effort must be in multiples of 0.5`,
             );
           }
         }
-        if ((row.other_effort * 10) % 5 !== 0) {
+        if ((flt(row.other_effort) * 10) % 5 !== 0) {
           frappe.throw(
-            `${task_module} Row ${row.idx}: other effort must be in multiples of 0.5`
+            `${task_module} Row ${row.idx}: other effort must be in multiples of 0.5`,
           );
         }
         frm.doc.total_config_effort += flt(row.default_configuration_effort);

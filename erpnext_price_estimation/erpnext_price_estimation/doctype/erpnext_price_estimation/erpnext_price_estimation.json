@@ -16,13 +16,6 @@
   "status",
   "customer_details",
   "project_and_account_brief",
-  "qualification_details_section",
-  "current_state",
-  "pain_point",
-  "column_break_qual",
-  "impact",
-  "discovery_details_section",
-  "discovery_call_notes",
   "pick_modules_section",
   "accounts",
   "hrms",
@@ -121,51 +114,6 @@
    "fieldname": "project_and_account_brief",
    "fieldtype": "Text Editor",
    "label": "Project and Account Brief"
-  },
-  {
-   "depends_on": "eval:doc.lead_qualification",
-   "fieldname": "qualification_details_section",
-   "fieldtype": "Section Break",
-   "label": "Qualification Details"
-  },
-  {
-   "fetch_from": "lead_qualification.current_state",
-   "fieldname": "current_state",
-   "fieldtype": "Text",
-   "label": "Current State",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "lead_qualification.pain_point",
-   "fieldname": "pain_point",
-   "fieldtype": "Text",
-   "label": "Pain Point",
-   "read_only": 1
-  },
-  {
-   "fieldname": "column_break_qual",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "lead_qualification.impact",
-   "fetch_if_empty": 1,
-   "fieldname": "impact",
-   "fieldtype": "Text",
-   "label": "Impact",
-   "read_only": 1
-  },
-  {
-   "depends_on": "eval:doc.lead_qualification",
-   "fieldname": "discovery_details_section",
-   "fieldtype": "Section Break",
-   "label": "Discovery Details"
-  },
-  {
-   "fetch_from": "lead_qualification.discovery_call_notes",
-   "fieldname": "discovery_call_notes",
-   "fieldtype": "Text Editor",
-   "label": "Discovery Call Notes",
-   "read_only": 1
   },
   {
    "fieldname": "pick_modules_section",
@@ -566,7 +514,6 @@
    "search_index": 1
   },
   {
-   "fetch_from": "customer.customer_name",
    "fieldname": "party_name",
    "fieldtype": "Data",
    "label": "Party Name",

@@ -1,6 +1,8 @@
 # Copyright (c) 2024, frappe solutions and Contributors
 # See license.txt
 
+from unittest.mock import patch
+
 import frappe
 from frappe.tests.utils import FrappeTestCase
 
@@ -102,15 +104,85 @@ class TestERPNextPriceEstimation(FrappeTestCase):
         self.doc.validate_amc_amount()
         self.assertEqual(self.doc.amc_amount, 120)
 
+    def _make_task(self, task_name, module):
+        task = frappe.new_doc("Estimation Task")
+        task.task_name = task_name
+        task.module = module
+        return task.insert(ignore_mandatory=True)
+
     def test_get_task_documents(self):
-        task = frappe.get_doc(
-            {
-                "doctype": "Estimation Task",
-                "task_name": "Test Task",
-                "module": "Accounts",
-            }
-        ).insert(ignore_mandatory=True)
+        task = self._make_task("Test Task", "Accounts")
 
         result = get_task_documents(module="Accounts")
 
         self.assertTrue(any(d["name"] == task.name for d in result))
+
+    def test_get_task_documents_module_filter_excludes_others(self):
+        accounts_task = self._make_task("Accounts Task", "Accounts")
+        buying_task = self._make_task("Buying Task", "Buying")
+
+        result = get_task_documents(module="Accounts")
+        names = [d["name"] for d in result]
+
+        self.assertIn(accounts_task.name, names)
+        self.assertNotIn(buying_task.name, names)
+
+    def test_get_task_documents_requires_read_permission(self):
+        user = "test-price-estimation@example.com"
+        if not frappe.db.exists("User", user):
+            user_doc = frappe.new_doc("User")
+            user_doc.email = user
+            user_doc.first_name = "Price Estimation Test"
+            user_doc.insert(ignore_permissions=True)
+
+        frappe.set_user(user)
+        try:
+            self.assertRaises(frappe.PermissionError, get_task_documents)
+        finally:
+            frappe.set_user("Administrator")
+
+    def test_valid_party_doctype(self):
+        # allowlisted and installed on the site
+        with patch.object(frappe.db, "exists", return_value=True):
+            for doctype in ("Customer", "Lead", "Prospect", "CRM Lead", "CRM Deal"):
+                self.doc.opportunity_from = doctype
+                self.doc.validate_party()
+
+    def test_invalid_party_doctype(self):
+        # not in the allowlist; rejected before the existence check
+        self.doc.opportunity_from = "User"
+        self.assertRaises(frappe.ValidationError, self.doc.validate_party)
+
+    def test_allowlisted_party_doctype_not_installed(self):
+        # in the allowlist but the doctype is not installed on this site
+        self.doc.opportunity_from = "CRM Lead"
+        with patch.object(frappe.db, "exists", return_value=False):
+            self.assertRaises(frappe.ValidationError, self.doc.validate_party)
+
+    def test_company_rejected_when_doctype_missing(self):
+        self.doc.company = "Some Company"
+        with patch.object(frappe.db, "exists", return_value=False):
+            self.assertRaises(frappe.ValidationError, self.doc.validate_company)
+
+    def test_company_allowed_when_doctype_exists(self):
+        self.doc.company = "Some Company"
+        self.doc.validate_company()
+
+    def test_duplicate_custom_task_names_across_documents(self):
+        # regression: child rows must not collide on identical task names
+        self._add_row("custom_tasks_details", config=1.0, other=1.0)
+        self.doc.insert(ignore_mandatory=True)
+
+        doc2 = frappe.new_doc("ERPNext Price Estimation")
+        doc2.append(
+            "custom_tasks_details",
+            {
+                "task": "Test Task",
+                "applicability": "Applicable",
+                "default_configuration_effort": 1.0,
+                "other_effort": 1.0,
+            },
+        )
+        doc2.insert(ignore_mandatory=True)
+
+        self.assertTrue(doc2.name)
